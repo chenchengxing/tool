@@ -1,0 +1,32 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "pageNo": 1,
+        "pageSize": 6,
+        "orderBy": null,
+        "order": null,
+        "autoCount": true,
+        "result": [
+            {
+                "userId": "11111133322",
+                "realName": "谢新文",
+                "loginName": "xiexinwen01"
+            },
+            {
+                "userId": "11111133323",
+                "realName": "袁凤姣",
+                "loginName": "yuanfengjiao"
+            }
+        ],
+        "totalCount": 2,
+        "first": 0,
+        "orderBySetted": false,
+        "totalPages": 1,
+        "hasNext": false,
+        "nextPage": 1,
+        "hasPre": false,
+        "prePage": 1,
+        "orderByString": ""
+    },
+    "code": 200
+}

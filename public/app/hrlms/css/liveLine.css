@@ -1,0 +1,18 @@
+/**
+ * liveLine.css
+ * 首页 直播课堂
+ */
+
+
+
+.liveline-list{padding:10px 10px 0 20px;background:url(../images/live-line.png) repeat-y 12px 0;}
+.liveline-list li{padding:0 0 10px;}
+.liveline-list li p{line-height:18px;height:36px;}
+.liveline-list li.first{float:left;width:2px;height:8px;margin:-10px 0 0 -8px;background:#fff;}
+.liveline-list li.last{float:left;width:2px;height:40px;margin:-49px 0 0 -8px;background:#fff;}
+.liveline-list a{display:block;padding:4px 0 14px;line-height:18px;border-bottom:1px dashed #999;}
+.liveline-list a.nobrd{border-bottom:none;}
+.liveline-list a:hover{text-decoration:none;}
+.liveline-list .time{position:relative;float:left;display:block;margin-left:-11px;margin-right:10px;padding:0 0 0 10px;_margin-right:5px;color:#999;background:url(../images/liveline-dot.png) no-repeat 0 4px;}
+.liveline-list .ing .time{background:url(../images/liveline-on.png) no-repeat;}
+.liveline-list .ing .time span{color:#fff;margin-left:-8px;}

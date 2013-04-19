@@ -1,0 +1,10 @@
+/**
+ * groupTalk.css
+ * 首页 最新小组话题
+ */
+
+
+
+.talk-list{overflow:hidden;*zoom:1;}
+.talk-list li{float:left;width:360px;padding:20px 0;border-bottom:1px dashed #999;}
+.talk-list li.nobrd{border-bottom:0 none;}

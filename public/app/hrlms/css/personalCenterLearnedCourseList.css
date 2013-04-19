@@ -1,0 +1,19 @@
+/**
+    *personalCenterLearnedCourseList.css
+    *个人中心 已完成的课程
+*/
+
+#personalCenterLearnedCourseList header{height:40px;font-family:"微软雅黑";font-size:16px;color:#888;}
+#personalCenterLearnedCourseList header h2{width:200px;line-height:40px;background:url("../images/header-dotted.png") repeat-x 0 bottom;}
+#personalCenterLearnedCourseList li{position:relative;padding:18px 0 21px;border-bottom:1px solid #e6e6e6;}
+#personalCenterLearnedCourseList .gradulation{position:absolute;top:10px;left:-10px;width:61px;height:57px;background:url(../images/icons.png) no-repeat 0 -180px;z-index:99;}
+#personalCenterLearnedCourseList .img{margin-right:18px;}
+#personalCenterLearnedCourseList .detail{float:left;font-family:"微软雅黑";}
+#personalCenterLearnedCourseList .detail h2{width:540px;font-weight:700;font-size:18px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+#personalCenterLearnedCourseList .detail a{color:#666;}
+#personalCenterLearnedCourseList .detail a:hover{text-decoration:underline;}
+#personalCenterLearnedCourseList .detail p{color:#999;}
+#personalCenterLearnedCourseList .delete{width:20px;height:20px;background:url(../images/icons.png) no-repeat -157px -87px;}
+#personalCenterLearnedCourseList .delete:hover{background-position:-157px -67px;}
+
+

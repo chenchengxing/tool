@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CMS可选课表</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/externalFrameCMS.css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- <div>
+        <a href="personalCenterSelectable.html">返回可选课表</a>
+    </div> -->
+    <section id="externalCMSTitle">
+
+    </section>
+    <section id="iframeCMS">
+
+    </section>
+    <script src="js/require-jquery.js"></script>
+    <script>
+        require.config({
+            baseUrl: "js",
+            paths: {
+                "externalFrameCMS": "externalFrameCMS"
+            },
+            shim: {
+                "jquery.tmpl": ["jquery"]
+            }
+        });
+        require(["externalFrameCMS"]);
+    </script>
+</body>
+</html>

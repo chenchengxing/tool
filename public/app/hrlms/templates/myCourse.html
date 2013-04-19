@@ -1,0 +1,12 @@
+<h2 class="tl">我今天的选课</h2>
+<ul>
+    {{each result}}
+    <li class="ml">
+        <!-- <div class="status">进入教室</div> -->
+        <div class="txt">
+            <h5><a href="liveInfo.html?courseId=${id}">${name}</a></h5>
+            <p>{{if beginTime}}开课时间：${beginTime}{{else}}该课程时间未确定{{/if}}</p>
+        </div>
+    </li>
+    {{/each}}
+</ul>

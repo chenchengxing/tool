@@ -1,0 +1,17 @@
+<ul>
+    {{each result}}
+    <li class="tweet" data-noticeId="${noticeId}" data-groupId="${groupId}">
+        <div class="t-author">
+            <a href="profileCourse.html?userId=${creater}" class="avatar"><img src="${$item.defaultImage(\'family\', createrName)}" onerror="this.src=\'${$item.defaultImage(\'avatar\')}\';" data-id="${creater}" width="48" height="48" alt="" /></a>
+        </div>
+        <div class="t-bd">
+            <div class="t-hd"><a href="profileCourse.html?userId=${creater}" class="avatar" data-id="${creater}"><h5>${createrName}</h5></a></div>
+            <p class="t-msg">{{html $item.formatS(content)}}</p>
+            <div class="t-ft">
+                <a href="javascrip:void(0);" class="tweet-reply fr">评论（${replyCount}）</a>
+                <div class="time">${timelineFormat}</div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>

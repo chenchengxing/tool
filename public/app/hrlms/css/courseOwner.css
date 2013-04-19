@@ -1,0 +1,18 @@
+/**
+ * courseOwner.css
+ * 课程中心-课程详情 课程所属
+ */
+
+
+#courseOwner{padding:10px 6px 30px;font-family:"微软雅黑";background:url(../images/courseOwner-bg.png) #e8f2f2 no-repeat 0 bottom;}
+#courseOwner h2{font-size:30px;color:#6e7c9d;text-align:center;}
+#courseOwner h3{margin:0 0 10px;padding:5px 0;font-size:20px;font-weight:bold;color:#fff;text-align:center;border-bottom:1px dashed #cad4da;}
+#courseOwner p{line-height:22px;padding:0 10px;color:#686e7c;}
+
+#courseOwner .pic{float:left;margin:0 10px;}
+#courseOwner .txt{overflow:hidden;*zoom:1;}
+#courseOwner .txt h5{font-size:18px;}
+#courseOwner .txt p{color:#19c5bf;margin:0 0 30px;}
+#courseOwner .user-status{clear:both;color:#888;margin:0 0 6px;padding:0 10px 6px;border-bottom:1px dashed #c8d4da;overflow:hidden;*zoom:1;font-family:"宋体";}
+#courseOwner .user-status li{float:left;width:33%;line-height:18px;}
+#courseOwner .user-status strong{position:relative;top:2px;padding-right:4px;color:#e74013;font-size:18px;font-family:Arial;}

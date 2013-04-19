@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/tmp1.css">
+</head>
+<body>
+    <section id="tmp1">
+    
+    </section>
+    <script type="text/javascript" src="../js/require-jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.tmpl.js"></script>
+    <script type="text/javascript">
+        $.get("../data/tmp1.json",
+            function (response) {
+                $("#tmp1").html($.tmpl($("#tmp1").html(), response.data));
+            }
+        );
+    </script>
+</body>
+</html>

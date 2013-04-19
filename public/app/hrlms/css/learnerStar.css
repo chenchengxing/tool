@@ -1,0 +1,9 @@
+/**
+ * learnerStar.css
+ * 首页 学习达人
+ */
+
+
+
+.learnerstar-list{padding:10px 0 0;overflow:hidden;*zoom:1;}
+.learnerstar-list li{float:left;width:97px;margin:0 0 20px 12px;}

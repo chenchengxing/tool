@@ -1,0 +1,50 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "pageNo": 1,
+        "pageSize": 10,
+        "orderBy": "timeline",
+        "order": "desc",
+        "autoCount": true,
+        "result": [
+            {
+                "noticeId": 314,
+                "content": "",
+                "replyId": 305,
+                "referenceId": null,
+                "creater": 11111133328,
+                "createrName": "xiexinwen01",
+                "timeline": "2013-03-19 15:58:00",
+                "source": "web",
+                "groupId": null,
+                "replyCount": 0,
+                "referenceCount": 0,
+                "reference": null
+            },
+            {
+                "noticeId": 313,
+                "content": "测试",
+                "replyId": 305,
+                "referenceId": null,
+                "creater": 11111133328,
+                "createrName": "xiexinwen01",
+                "timeline": "2013-03-19 15:57:25",
+                "source": "web",
+                "groupId": null,
+                "replyCount": 0,
+                "referenceCount": 0,
+                "reference": null
+            }
+        ],
+        "totalCount": 2,
+        "first": 0,
+        "orderBySetted": true,
+        "totalPages": 1,
+        "hasNext": false,
+        "nextPage": 1,
+        "hasPre": false,
+        "prePage": 1,
+        "orderByString": " order by timeline desc"
+    },
+    "code": 200
+}

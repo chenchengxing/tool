@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>百度统一培训 个人中心</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/personalCenterGroup.css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--#S top -->
+    <section id="top" class="gray-bg">
+    </section><!--#E top -->
+    
+    <!--#S header -->
+    <header id="header">
+    </header><!--#E header -->
+    
+    <!--#S content -->
+    <section id="content" class="clearfix w mt10">
+        <!--#S aside -->
+        <aside class="fl w186">
+            <!--#S personalCenterNav -->
+            <section id="personalCenterNav">
+                
+            </section><!--#E personalCenterNav -->
+        </aside><!--#E aside -->
+        
+        <section class="fr w760">
+
+            <!--#S personalCenterGroupTab -->
+            <section id="personalCenterGroupTab">
+                <!-- <ul class="tab-ul-red">
+                    <li >关注的人    <span class="count">(34)</span>   </li>
+                    <li class="cur">我的粉丝<span class="count">(323)</span></li>
+                    <li>相互关注<span class="count">(243)</span></li>
+                </ul> -->
+            </section><!--#E personalCenterGroupTab -->
+
+            <!--#S personalCenterGroupList -->
+            <section id="personalCenterGroupList" class="mt10">
+                <!-- <ul>
+                    <li class="block" style="position:relative;">
+
+                        <div class="block-header">
+
+                        </div>
+
+                        <div class="block-body">
+                            <a href="" class="block-left">
+                                <img src="images/48x48-p.png">
+                            </a>
+                            <div class="block-right">
+                                <h2>www</h2>
+                                <span>1<em>个组员</em>  </span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="block-footer">
+
+                        </div>
+                        
+                        <div class="hover-quit">
+                            <div class="cross-quit"> <span>退出</span> </div>
+                        </div>
+                    </li>
+                 </ul> -->
+            </section><!--#E personalCenterGroupList -->
+            
+            
+
+        </section>
+    </section><!--#E content -->
+    
+    <!--#S footer -->
+    <footer id="footer">
+    </footer><!--#E footer -->
+    
+    
+    <script src="js/require-jquery.js"></script>
+    <script>
+        require.config({
+            baseUrl: "js",
+            paths: {
+                "personalCenterGroup": "personalCenterGroup"
+            },
+            shim: {
+                "jquery.tmpl": ["jquery"]
+            }
+        });
+        require(["personalCenterGroup"]);
+    </script>
+</body>
+</html>

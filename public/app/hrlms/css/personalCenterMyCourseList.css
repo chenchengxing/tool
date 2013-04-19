@@ -1,0 +1,35 @@
+/**
+ * personalCenterMyCourseList.css
+ * personalCenterMyCourseList.html 
+ */
+
+
+
+/* =我创建的课程样式文件
+-------------------------------------------------------------- */
+
+#personalCenterMyCourseList .publish-tab{background:url(../images/personal-center-my-course-tab.png);background-position:0 0;width:238px;height:30px;cursor:pointer}
+#personalCenterMyCourseList .publish-tab-oppo{background-position:0 -40px}
+#personalCenterMyCourseList .list-content-li{overflow:hidden;*zoom:1;padding-top:17px;border-bottom:1px solid #e6e6e6}
+#personalCenterMyCourseList .course-pic{float:left;display:block;width:173px;height:110px;margin-right:20px}
+#personalCenterMyCourseList .course-info{overflow:hidden;*zoom:1}
+#personalCenterMyCourseList h2{font:18px/24px 微软雅黑;color:#666}
+#personalCenterMyCourseList h2 a{display:inline-block;max-width:470px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+#personalCenterMyCourseList .process-bar{background:#e7e7e7;height:20px;line-height:20px;font:bold 16px/20px arail;color:#2a78da;width:200px}
+#personalCenterMyCourseList .per{background:url(../images/process-arrow-small.png) no-repeat right 0 #19c5bf;height:20px;float:left;width:100%;margin-right:20px}
+#personalCenterMyCourseList .course-description{font:12px/20px 微软雅黑;color:#999;line-height:50px}
+#personalCenterMyCourseList .personal-center-course-list-close:hover{background-position:-157px -67px} 
+#personalCenterMyCourseList .personal-center-course-list-close{float:right;background:url(../images/icons.png) no-repeat -157px -87px;width:20px;height:20px;line-height:30px} 
+#personalCenterMyCourseList .delete{cursor:pointer;float:left;margin-left:10px;display:block;background:url(../images/icons.png);background-position:0 -308px;width:23px;height:23px}
+#personalCenterMyCourseList .delete:hover{background-position:-29px -308px;}
+#personalCenterMyCourseList .edit{cursor:pointer;float:right;margin-right:15px;display:block;background:url(../images/icons.png);background-position:0 -336px;width:23px;height:23px}
+#personalCenterMyCourseList .edit:hover{background-position:-29px -336px;}
+#personalCenterMyCourseList .course-footer{vertical-align:text-top}
+#personalCenterMyCourseList .operations{float:right;display:inline-block;width:80px}
+#personalCenterMyCourseList p{height:60px;font-family:"宋体";color:#999;line-height:20px;overflow:hidden;width: 470px;}
+#personalCenterMyCourseList .rbtn{padding-left:24px;padding-right:24px;margin-top: -18px;}
+#personalCenterMyCourseList .bbtn{margin-top: -18px;}
+#personalCenterMyCourseList .tag-list{height:35px}
+/*#personalCenterMyCourseList .tag-list ul{padding-top:17px}*/
+#personalCenterMyCourseList .tag-list li{float:left;margin-right:8px}
+#personalCenterMyCourseList .pencil{background:url(../images/tag-icon.png) no-repeat;padding-left:13px}

@@ -1,0 +1,49 @@
+/**
+ * courseDetail.css
+ * 课程中心-课程详情 课程介绍模块
+ */
+
+
+#courseDetail .intro{overflow:hidden;*zoom:1;color:#666;}
+#courseDetail .pic{float:left;display:block;width:302px;height:193px;margin-right:13px;}
+#courseDetail .txt{overflow:hidden;*zoom:1;}
+#courseDetail .txt p{line-height:20px;}
+#courseDetail h1{height:52px;margin:0 0 18px;padding:5px 0;font:22px/26px "微软雅黑";   display: inline-block;
+    max-width:370px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+}
+#courseDetail .c-tag{margin:10px 0;}
+#courseDetail .c-tag a{color:#999;margin-right:10px;padding-left:16px;background:url(../images/tag-icon.png) no-repeat;}
+
+#courseDetail .brief{margin:15px 0 0;font-family:"微软雅黑";}
+#courseDetail .brief h5{font-size:18px;}
+#courseDetail .brief p{padding:10px 0;font-size:14px;line-height:24px;color:#666;height: 62px;overflow: hidden;}
+#courseDetail .brief span{padding-left: 10px;color: #e74013;cursor: pointer;}
+
+#courseDetail .obtn{display:block;width:120px;height:38px;padding-left:13px;font:20px/38px "微软雅黑";background:url(../images/btn-arrow.png) #F46E4B no-repeat 100px center;}
+#courseDetail .obtn:hover{background-color:#F0604B;}
+
+#courseDetail .detail-tab{margin:30px 0;border:1px solid #ededed;}
+#courseDetail .tab-btns{height:40px;color:#999;font:18px/40px "微软雅黑";border:1px solid #fff;border-bottom-color:#ededed;background:url(../images/hd-bg.png) repeat-x;}
+#courseDetail .tab-btns li{float:left;margin-right:10px;padding:0 20px;cursor:pointer;}
+#courseDetail .tab-btns li.cur{position:relative;top:-2px;left:-2px;color:#15b7b1;border-style:solid;border-color:#19c5bf #ededed #fff #ededed;border-width:2px 1px 1px;background-color:#fff;}
+#courseDetail .tab-btns i{position:relative;top:2px;*top:-2px;display:inline-block;width:17px;height:17px;margin-right:6px;background:url(../images/icons.png) no-repeat;*zoom:1;*display:inline;}
+#courseDetail .tab-btns i.i-o{background-position:0 -133px;}
+#courseDetail .tab-btns i.i-f{background-position:-30px -132px;}
+#courseDetail .tab-btns i.i-l{background-position:-61px -132px;}
+#courseDetail .tab-btns i.i-c{width:20px;background-position:-91px -132px;}
+#courseDetail .tab-btns .cur i.i-o{background-position:0 -156px;}
+#courseDetail .tab-btns .cur i.i-f{background-position:-30px -155px;}
+#courseDetail .tab-btns .cur i.i-l{background-position:-61px -155px;}
+#courseDetail .tab-btns .cur i.i-c{width:20px;background-position:-91px -155px;}
+
+#courseDetail .tab-cont{padding:20px 15px;}
+
+#courseDetail #publisher .publisher-textarea{width:648px;}
+#courseDetail #publisher .obtn,#courseDetail #tweetReply .obtn{display:inline-block;font:12px/24px "宋体";background-image:none;}
+#courseDetail #tweetReply .publisher-reply{width:587px;}
+
+#courseDetail .t-d .name{display: inline-block;max-width:220px;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}

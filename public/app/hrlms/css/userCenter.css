@@ -1,0 +1,37 @@
+/**
+ * userCenter.css
+ * 首页 用户信息（包含：我的学习进度 && 可选课表）
+ */
+
+
+
+.user-intro{padding:18px 14px 2px;height:90px;overflow:hidden;*zoom:1;color:#fff;border-bottom:1px solid #c82321;background:#e74013;}
+.user-intro .pic{position:relative;float:left;width:76px;height:76px;margin-right:10px;_margin-right:5px;}
+.user-intro .pic:hover{text-decoration:none;}
+.user-intro .pic:hover span{color:#fff;}
+.user-intro .pic span{position:absolute;left:0;bottom:0;width:100%;height:22px;line-height:22px;text-align:center;color:#ddd;}
+.user-intro .pic .sd{opacity:0.6;filter:alpha(opacity=60);background:#000;}
+.user-intro .txt{font-family:"微软雅黑";}
+.user-intro .txt .name{margin:2px 0 10px;font-size:18px;}
+
+.user-process h2,
+.user-course h2{color:#fff;font:18px "微软雅黑";}
+
+.user-process{padding:10px 14px;height:98px;border-top:1px solid #5695e3;border-bottom:1px solid #206bc8;background:#4088e2;}
+.user-process a{color:#fff;}
+.user-process .process-bar{height:30px;margin:10px 0;border:1px solid #f9fbfe;background:#e5e5e5;}
+.user-process .per{height:30px;background:url(../images/process-arrow.png) no-repeat #19c5bf right 0;}
+.user-process .val{float:left;width:100%;height:30px;margin-top:-30px;font:bold 18px/30px Arail;color:#2a78da;text-align:center;}
+
+.user-course{padding:10px 0;border-top:1px solid #22d8c8;border-bottom:1px solid #00b296;background:#19c5bf;}
+.user-course h2{padding:0 14px 4px;}
+.user-course .user-course-cont{width:220px;margin:0 auto;background:url(../images/user-course-bg.png) repeat-y;}
+.user-course .ucc-top,
+.user-course .ucc-btm{height:10px;background:url(../images/user-course-brd.png) no-repeat;}
+.user-course .ucc-btm{background-position:0 bottom;}
+.user-course .ucc-list{height:48px;padding:0 15px;overflow:hidden;}
+.user-course .ucc-list li{line-height:24px;}
+.user-course .ucc-list a{float:right;}
+.user-course .ucc-more{display:block;margin:0 15px;height:11px;text-align:center;}
+.user-course .ucc-more span{display:inline-block;width:25px;height:11px;background:url(../images/icons.png) no-repeat -63px -308px;}
+.user-course .ucc-more i{display:none;}

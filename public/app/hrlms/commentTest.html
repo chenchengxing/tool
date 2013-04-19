@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>百度统一培训</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/commentTest.css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--#S top -->
+    <section id="top" class="gray-bg">
+        <!--div class="clearfix w">
+            <div class="fl user-name">
+                <div class="avatar">
+                    <img src="images/15x15.jpg" width="15" height="15" alt="" />
+                </div>
+                zhouyijing 你好!
+            </div>
+            <ul class="fr user-bar">
+                <li><a href="#">观看记录</a></li>
+                <li><a href="#">日历</a></li>
+                <li class="last"><a href="#">站内信</a></li>
+            </ul>
+        </div-->
+    </section><!--#E top -->
+    
+   <section id="comment">
+		<!-- <div class="input">
+			<textarea class="input-textarea"></textarea>
+		</div>
+
+		<div class="function-area">
+			<span>给该课程打分</span>
+			<div class="rating" id="rating">
+				<img src="images/stars.png">
+			</div>
+			<a href="#" class="btn">发布</a>
+		</div> -->
+		
+	</section>
+    
+    
+    
+    <!--#S footer -->
+    <footer id="footer">
+    </footer><!--#E footer -->
+    
+    
+    <script src="js/require-jquery.js"></script>
+    <script>
+        require.config({
+            baseUrl: "js",
+            paths: {
+                "commentTest": "commentTest"
+            },
+            shim: {
+                "jquery.tmpl": ["jquery"]
+            }
+        });
+
+        
+        require(["commentTest"]);
+    </script>
+</body>
+</html>

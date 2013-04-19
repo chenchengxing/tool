@@ -1,0 +1,12 @@
+<h2 class="tl">我的开课申请</h2>
+<ul>
+    {{each result}}
+    <li class="ml">
+        <div class="status"><span {{if pass == 1}}class="yes"{{else}}class="no"{{/if}}>${passName}</span></div>
+        <div class="txt">
+            <h5><a href="liveInfo.html?courseId=${id}">${name}</a></h5>
+            <p>${createTime}</p>
+        </div>
+    </li>
+    {{/each}}
+</ul>

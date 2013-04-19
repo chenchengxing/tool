@@ -1,0 +1,21 @@
+<ul>
+    {{each result}}
+    <li class="tp-info">
+        <div class="tp-img"><img width="26" height="26" src="images/48x48.png"></div>
+        <div class="tp-st"> 
+            <div class="tp-sum">${noticeCount}</div>
+            <p class="tp-time">${latestModifyTimeFormat}</p>
+        </div>
+        <div class="tp-main"> 
+            <div class="tp-name"><a href="groupTopicInfo.html?groupId=${groupId}&tag=${$item.encodeStr(tag)}">${tag}</a></div>
+            <div class="tp-dt"> 
+                <span class="ff-gray">by</span>
+                <span class="ps">${creatorName}</span>
+                <span class="ff-gray p-30">${$item.formatT(createTime)}</span>
+                <span class="ff-gray">发起</span>
+                <span class="ff-gray p-30">最后回复：</span><span class="ps">${latestModifierName}</span>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>

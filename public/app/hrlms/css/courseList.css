@@ -1,0 +1,19 @@
+/**
+ * courseList.css
+ * 课程中心-课程列表
+ */
+
+
+#courseList .list-gird{padding:20px 0 0 6px;overflow:hidden;*zoom:1;}
+#courseList .list-gird li{float:left;margin:0 24px 34px 0;_margin-right:12px;}
+#courseList .list-gird li.nomr{margin-right:0;}
+
+#courseList .list-l{padding:10px 0 0 10px;}
+#courseList .list-l .addCourse{margin-bottom:10px;border-bottom:1px dashed #999;}
+#courseList .list-l .rbtn{margin:0 0 10px 630px;}
+#courseList .list-l li{margin:0 0 35px;padding:0 0 35px;overflow:hidden;*zoom:1;border-bottom:1px dashed #999;}
+#courseList .list-l li.last{margin-right:0;}
+#courseList .groupCourseDel{float:right;padding-right:20px;cursor:pointer;}
+#courseList .tag{height:23px;}
+#courseList .scaleCourse{float:right;padding-right:20px;display:inline-block;height:23px;line-height:23px;font:bold 18px '微软雅黑';}
+

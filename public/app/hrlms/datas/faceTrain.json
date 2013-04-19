@@ -1,0 +1,34 @@
+{
+    "errorcode": 0,
+    "errormsg": "",
+    "data": [
+        {
+            "beginTime": "2012-12-01 14:40",
+            "endTime": "2012-12-12 16:40",
+            "name": "NLP机器学习专题系列课程_机器学习应用实践",
+            "author": "赵晋彬",
+            "status": 1
+        },
+        {
+            "beginTime": "2012-12-21 14:40",
+            "endTime": "2012-12-12 16:40",
+            "name": "BAE与云端开发",
+            "author": "赵晋彬",
+            "status": 1
+        },
+        {
+            "beginTime": "2012-12-11 14:40",
+            "endTime": "2012-12-12 16:40",
+            "name": "测试设计之基础理论",
+            "author": "赵晋彬",
+            "status": 1
+        },
+        {
+            "beginTime": "2012-12-01 14:40",
+            "endTime": "2012-12-12 16:40",
+            "name": "ppt优化设计入门",
+            "author": "fhw",
+            "status": 1
+        }
+    ]
+}

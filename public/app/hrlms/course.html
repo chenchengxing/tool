@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>百度统一培训 课程中心</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/course.css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- <img src="/platform/rs" alt="" />
+    <img src="/sns/rs" alt="" /> -->
+    <!--#S top -->
+    <section id="top" class="gray-bg">
+    </section><!--#E top -->
+    
+    <!--#S header -->
+    <header id="header">
+    </header><!--#E header -->
+    
+    <!--#S content -->
+    <section id="content" class="clearfix w mt10 c-blue-bg">
+        <!--#S aside -->
+        <aside class="fl w230">
+            <!--#S category -->
+            <section id="category">
+                <!-- <h2><i></i>分类导航</h2>
+                <ul class="category-list">
+                    <li>
+                        <dl>
+                            <dt><h3><i class="i0"></i>技术研发</h3></dt>
+                            <dd>
+                                <a href="#">搜索技术</a>
+                                <a href="#">编程语言</a>
+                                <a href="#">前端技术</a>
+                                <a href="#">操作系统</a>
+                                <a href="#">硬件网络</a>
+                                <a href="#">数据库</a>
+                                <a href="#">移动开发</a>
+                                <a href="#">数据挖掘</a>
+                                <a href="#">测试技术</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><h3><i class="i1"></i>产品市场</h3></dt>
+                            <dd>
+                                <a href="#">用户研究</a>
+                                <a href="#">交互设计</a>
+                                <a href="#">视觉设计</a>
+                                <a href="#">需求分析</a>
+                                <a href="#">竞品分析</a>
+                                <a href="#">运营推广</a>
+                                <a href="#">行业研究</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul> -->
+            </section><!--#E category -->
+        </aside><!--#E aside -->
+        
+        <section class="fr w720">
+            <!--#S filterCourse -->
+            <section id="filterCourse" class="filter-course">
+                <!-- <div class="switch-view">
+                    <a href="#" class="v-grid-cur"><span>网格</span></a> <a href="#" class="v-list"><span>列表</span></a>
+                </div>
+                <div class="filter-type">排序方式：<a href="#" class="f-time-cur"><i></i>更新时间</a> <a href="#" class="f-pv"><i></i>浏览量</a> <a href="#" class="f-cmt"><i></i>评论量</a></div> -->
+            </section><!--#E filterCourse -->
+            
+            <!--#S courseList -->
+            <section id="courseList" class="mt10">
+                <!-- <ul class="list-gird">
+                    <li class="c">
+                        <a href="courseInfo.html" class="pic">
+                            <span class="apply-icon"></span>
+                            <img src="images/220x140.png" width="220" height="140" alt="">
+                            <p class="intro">讲师：张昕 李年福<br>来自：3W咖啡<br>分类：讲座</p>
+                        </a>
+                        <h5><a href="courseInfo.html">Android开发视频教程</a></h5>
+                    </li>
+                    <li class="c">
+                        <a href="courseInfo.html" class="pic">
+                            <span class="apply-icon"></span>
+                            <img src="images/220x140.png" width="220" height="140" alt="">
+                            <p class="intro">讲师：张昕 李年福<br>来自：3W咖啡<br>分类：讲座</p>
+                        </a>
+                        <h5><a href="courseInfo.html">Android开发视频教程</a></h5>
+                    </li>
+                    <li class="c nomr">
+                        <a href="courseInfo.html" class="pic">
+                            <img src="images/220x140.png" width="220" height="140" alt="">
+                            <p class="intro">讲师：张昕 李年福<br>来自：3W咖啡<br>分类：讲座</p>
+                        </a>
+                        <h5><a href="courseInfo.html">Android开发视频教程</a></h5>
+                    </li>
+                </ul> -->
+            </section><!--#E courseList -->
+            
+            <!--#S pagination -->
+            <section id="pagination" class="mt10 pagination">
+                <!-- <a href="#" class="page-prev">上一页</a> <a href="#">1</a> <span>2</span> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#" class="page-next">下一页</a> -->
+            </section><!--#E pagination -->
+        </section>
+    </section><!--#E content -->
+    
+    <!--#S footer -->
+    <footer id="footer">
+    </footer><!--#E footer -->
+    
+    <!--#S login -->
+    <script type="text/javascript">
+        document.write('<img src="/platform/kuayu.png?t='+new Date().getTime()+'" width="1" height="1" />');
+        document.write('<img src="/sns/kuayu.png?t='+new Date().getTime()+'" width="1" height="1" />');
+    </script><!--#E login -->
+    
+    <script src="js/require-jquery.js"></script>
+    <script>
+        require.config({
+            baseUrl: "js",
+            paths: {
+                "course": "course"
+            },
+            shim: {
+                "jquery.tmpl": ["jquery"]
+            }
+        });
+        require(["course"]);
+    </script>
+</body>
+</html>

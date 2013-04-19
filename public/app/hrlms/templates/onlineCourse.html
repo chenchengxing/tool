@@ -1,0 +1,9 @@
+{{each data}}
+<div class="t-line">
+    <span class="icon"><span class="${$item.getType(type)}"></span></span>
+    <span class="name"><a href="play.html?courseId=${courseId}&elementId=${id}" title="${name}">${$item.substr(name)}</a></span>
+    <span class="btn"><a href="play.html?courseId=${courseId}&elementId=${id}" class="gbtn bbig">开始学习</a></span>
+    <span class="step"><span class="{{if isViewed}}p100{{else}}p0{{/if}}-icon"></span></span>
+    <span class="time">${typeName}</span>
+</div>
+{{/each}}

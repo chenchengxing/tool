@@ -1,0 +1,39 @@
+/**
+ * courseInfo.css
+ * courseInfo.html课程中心-课程详情 入口样式文件
+ */
+
+
+
+/* =课程中心-课程详情
+-------------------------------------------------------------- */
+
+/* 课程详细信息 */
+@import 'courseDetail.css';
+
+/* 课程机构 */
+@import 'courseOwner.css';
+
+/* 最近加入的学员 */
+@import 'recentStudent.css';
+
+/* 推荐课程 */
+@import 'relateCourse.css';
+
+/* 在线课程 */
+@import 'onlineCourse.css';
+
+/* 面授培训 */
+@import 'faceTrain.css';
+
+/* 学习资料 */
+@import 'learnDocs.css';
+
+/* 输入框 */
+@import 'publisher.css';
+
+/* 小组讨论列表 */
+@import 'tweetList.css';
+
+/* 分页 */
+@import 'pagination.css';

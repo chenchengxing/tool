@@ -1,0 +1,8 @@
+<header class="hd">
+                    <h2>{{if flag}}相关标签{{else}}你可能感兴趣的标签{{/if}}</h2>
+                </header>
+                <div class="bd tag-list">
+                    {{each result}}
+                    <a href="tag.html?tagId=${id}" class="t">${name}</a>
+                    {{/each}}
+                </div>

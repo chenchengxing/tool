@@ -1,0 +1,15 @@
+<header class="hd">
+    <h2>Ta的粉丝</h2>
+</header>
+<div class="bd">
+    <ul>
+        {{each result}}
+        <li class="tc">
+            <div class="pic"><a tid="${id}" data-id="${id}" href="profileCourse.html?userId=${id}"><img width="48" height="48" src="${$item.defaultImage(\'family\', userName)}" onerror="this.src=\'${$item.defaultImage(\'avatar\')}\';"></a></div>
+            <div class="txt">
+                <h5 data-id="${id}">${userName}</h5>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

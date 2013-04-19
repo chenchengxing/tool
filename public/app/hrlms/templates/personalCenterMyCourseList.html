@@ -1,0 +1,39 @@
+<div class="tab-and-op">
+    <a class="gbtn bbig bbplus fr" href="createCourseStep.html">创建课程</a>
+    <div class="publish-tab">
+    </div>
+
+</div>
+<ul class="mt30">
+    {{each data.result}}
+    <li class="list-content-li">
+        <a href="courseInfo.html?courseId=${id}" class="course-pic">
+            <img width="173" height="110" src="{{if coverPath}}${coverPath}{{else}}${$item.defaultImage(\'course\')}{{/if}}" alt="${name}" onerror="this.src=\'${$item.defaultImage(\'course\')}\';"/>
+        </a>
+        
+        <div class="course-info">
+            <div class="course-head">
+                <h2 class="course-title">
+                    <div class="operations"></span><span class="delete"></span></div>
+                    <a href="courseInfo.html?courseId=${id}">${name}</a> 
+                </h2>
+            </div>
+            <p class="mt10">${description}
+            </p>
+            <div class="course-footer">
+                <a class="rbtn bbig bcl fr" href="#">发布</a>
+                <a class="bbtn bbig bcl fr" href="#">撤消发布</a>
+                <div class="tag-list">
+                    <ul>
+                        {{each $value.tags}}
+                            <li><a href="tag.html?tagId=${id}" class="pencil">${name}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </li>
+    {{/each}}
+    
+</ul>

@@ -1,0 +1,1 @@
+define({"foot":"\n        <div>${myname}</div>\n    ","top":"\n        test top\n    "});

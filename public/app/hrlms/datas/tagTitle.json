@@ -1,0 +1,11 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "id": 56,
+        "name": "电商",
+        "crtId": null,
+        "status": 0,
+        "appId": 5
+    },
+    "code": 200
+}

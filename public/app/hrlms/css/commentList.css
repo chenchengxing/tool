@@ -1,0 +1,26 @@
+/**
+ * commentList.css
+ * 课程中心-课程详情 评论列表
+ */
+
+ 
+#commentList{margin:0 -15px;padding:10px 0 0}
+#commentList .comment-cell{border-top:1px dotted #d5d5d5}
+.comment-avatar{margin-right:8px}
+.comment-cell{padding:15px 20px 10px}
+.comment-cell .username{color:#ea0f0f;margin:0px 0 6px;padding-top:4px}
+.comment-cell .comment-date{color:#666666}
+.rating{display:inline-block;width:90px;overflow:hidden}
+.rating img{margin-left:-90px}
+.star-level-0 img{margin-left:-90px}
+.star-level-1 img{margin-left:-72px}
+.star-level-2 img{margin-left:-54px}
+.star-level-3 img{margin-left:-36px}
+.star-level-4 img{margin-left:-18px}
+.star-level-5 img{margin-left:0px}
+.comment-text{margin-top:12px}
+.reply-btn-area{text-align:right}
+.reply-btn{cursor:pointer;color:#5089ba}
+.reply-box{border:1px solid #d6d6d6;background:#f8f8f8;margin:10px 0 5px;padding:10px}
+.reply-form-text{float:left;width:456px;padding:2px;height:20px;line-height:20px;border:1px solid #d6d6d6}
+.reply-submit{width:61px;height:27px;border:0 none}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title><%= appName %>工程</title>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1><%= appName %>工程</h1>
+    <p>Welcome to <%= appName %>,在这里，可以看到所有的页面列表，以及模块列表。快链</p>
+
+    <h2>模块列表<a class="btn" id="btnNewTemplate">创建新模块</a></h2>
+    <div class="alert alert-block" id="newTemplateInfo">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <h4>Warning!</h4>
+          <span>Best check yo self, you're not...</span>
+    </div>
+    <ul>
+        <% for(var i = 0; i < templateList.length; i++) {%>
+            <li data="<%= templateList[i].name %>">
+                <%= templateList[i].name %>
+                <a href="/app/<%= appName %>/template/<%= templateList[i].url %>" class="btn btn-info">预览</a>
+                <a class="btn btn-primary btnMerge" id="">合并到tpls.js</a>
+            </li>
+        <% } %>
+    </ul>
+
+    <h2>页面列表<a class="btn" id="btnNewPage">创建新页面</a></h2>
+    <div class="alert alert-block" id="newPageInfo">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <h4>Warning!</h4>
+          <span>Best check yo self, you're not...</span>
+    </div>
+    <ul>
+        <% for(var i = 0; i < pageList.length; i++) {%>
+            <li >
+                <%= pageList[i] %>
+                <a href="/app/<%= appName %>/<%= pageList[i] %>" class="btn btn-info">预览</a>
+                <a href="/mock/<%= appName %>?page=<%= pageList[i] %>" class="btn btn-primary">编辑</a>
+            </li>
+        <% } %>
+    </ul>
+
+
+    <!-- page Modal -->
+    <div id="newPageModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">添加新页面</h3>
+        </div>
+        <div class="modal-body">
+            <form>
+                <label>页面名(如需建index.html输入index即可)</label>
+                <input type="text" placeholder="请输入新的页面名,english only" class="span3" id="inputPageName">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-primary" id="btnNewPageConfirm">Go,新增</button>
+        </div>
+    </div>
+
+    <!-- Template Modal -->
+    <div id="newTemplateModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">添加新模板</h3>
+        </div>
+        <div class="modal-body">
+            <form>
+                <label>模板名</label>
+                <input type="text" placeholder="请输入新的模板名,english only" class="span3" id="inputTemplateName">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-primary" id="btnNewTemplateConfirm">Go,新增</button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#btnSubmit").click(function () {
+           $.ajax({
+                type : 'get',
+                url : 'createApp?appName=' + $("#appName").val(),
+                success : function () {
+                    console.log("ok");
+                }
+
+           });      
+        });
+
+        //#Start 创建新页面处理。。。
+        $("#newPageModal").modal("hide");
+        $("#btnNewPage").click(function () {
+            $("#newPageModal").modal("show");
+        });
+
+        $("#newPageInfo").hide();
+        //确认提交
+        $("#btnNewPageConfirm").click(function () {
+            $.get("/newPage?appName=<%= appName %>&pageName=" + $("#inputPageName").val(), function () {
+                $("#newPageModal").modal("hide");
+                console.log("创建新页面：" + $("#inputPageName").val() + ".html 成功");
+                $("#newPageInfo").show(500);
+                $("span", "#newPageInfo").html("创建新页面：" + $("#inputPageName").val() + ".html 成功\n" + "5秒后刷新页面");
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            })
+        });
+        //#End 创建新页面处理
+
+        $("#newTemplateModal").modal("hide");
+        $("#btnNewTemplate").click(function () {
+            $("#newTemplateModal").modal("show");
+        });
+
+        $("#newTemplateInfo").hide();
+        //确认提交
+        $("#btnNewTemplateConfirm").click(function () {
+            $.get("/newTemplate?appName=<%= appName %>&templateName=" + $("#inputTemplateName").val(), function () {
+                $("#newTemplateModal").modal("hide");
+                console.log("创建新页面：" + $("#inputTemplateName").val() + ".html 成功");
+                $("#newTemplateInfo").show(500);
+                $("span", "#newTemplateInfo").html("创建新页面：" + $("#inputTemplateName").val() + ".html 成功\n" + "5秒后刷新页面");
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            })
+        });
+
+        /*发送合并模板的请求
+        * ============================ */
+        $(".btnMerge").click(function (e) {
+            // console.log($(e.target).closest("li").attr("data"));
+            $.get("/mergeTemplate?appName=<%= appName %>&templateName=" + $(e.target).closest("li").attr("data"),
+                function () {
+                    console.log("合并成功");
+                }
+            );
+        });
+    </script>
+  </body>
+</html>

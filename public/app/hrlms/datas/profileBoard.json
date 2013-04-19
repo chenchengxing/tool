@@ -1,0 +1,15 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "id": 11111133328,
+        "userName": "xiexinwen01",
+        "nickName": "xiexinwen01",
+        "userType": 1,
+        "biography": "null",
+        "fans": 0,
+        "followed": 0,
+        "notices": 77,
+        "headImg": "nullxiexinwen01.jpg"
+    },
+    "code": 200
+}

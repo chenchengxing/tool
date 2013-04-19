@@ -1,0 +1,11 @@
+/**
+ * hotTalk.css
+ * 小组页 热门话题
+ */
+
+
+
+#hotTalk{margin:0 0 20px;}
+#hotTalk h2{padding:0 0 5px;color:#333;font:16px/18px "微软雅黑";}
+#hotTalk h2 a{position:relative;*top:2px;float:right;color:#666;font:12px "宋体";}
+

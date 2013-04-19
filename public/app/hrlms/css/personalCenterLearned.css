@@ -1,0 +1,20 @@
+/**
+ * personalCenterLearned.css
+ * personalCenterLearned.html 个人中心已完成的课程入口样式文件
+ */
+
+
+
+/* =个人中心
+-------------------------------------------------------------- */
+
+
+
+/*个人中心左侧导航 */
+@import 'personalCenterNav.css';
+
+/*已完成的课程 */
+@import 'personalCenterLearnedCourseList.css';
+
+/* 分页 */
+@import 'pagination.css';

@@ -1,0 +1,8 @@
+/**
+ * recentStudent.css
+ * 课程中心-课程详情 最近加入的学员
+ */
+
+#recentStudent ul{padding:20px 14px 10px;overflow:hidden;*zoom:1;}
+#recentStudent .s{float:left;margin:0 28px 10px 0;text-align:center;}
+#recentStudent .nomr{margin-right:0;}

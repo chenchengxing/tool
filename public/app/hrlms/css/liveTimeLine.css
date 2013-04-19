@@ -1,0 +1,15 @@
+/**
+ * liveTimeLine.css
+ * 直播课堂 直播列表 
+ */
+
+
+#liveTimeLine .gbtn, #liveTimeLine .bbtn{width:65px;text-align:center;margin-top:30px;}
+#liveTimeLine .ll{background:url(../images/icon3.png) no-repeat 74px top transparent;padding-top:7px;font-family:"微软雅黑";margin-bottom:30px;}
+#liveTimeLine .ll .live-list-b-bg{background:url(../images/icon3.png) no-repeat 74px bottom transparent;padding-bottom:7px;}
+#liveTimeLine .ll .live-list-con{background:url(../images/timeLine.png) repeat-y 77px 0 transparent;}
+#liveTimeLine .ll .live-list-con li{background:url(../images/icon1.png) no-repeat 63px 25px transparent;height:120px;}
+#liveTimeLine .ll .live-list-con li.ing{background:url(../images/icon2.png) no-repeat 63px 25px;}
+#liveTimeLine .ll .ll-status{float:left;background:url(../images/icons.png) no-repeat -70px -231px;width:50px;height:22px;text-align:center;line-height:20px;margin:30px 0 0;padding:0 8px 0 4px;color:#fff;}
+#liveTimeLine .ll .playing{background:url(../images/icons.png) no-repeat -70px -209px;}
+#liveTimeLine .ll .cif{float:left;width:580px;margin:4px 0 0 40px;}

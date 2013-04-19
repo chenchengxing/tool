@@ -1,0 +1,31 @@
+/**
+ * category.css
+ * 课程中心-分类导航
+ */
+
+
+#category{border-top:5px solid #e74113;font-family:"微软雅黑"}
+#category h2{margin:15px 15px 0;font-size:20px;line-height:24px;}
+#category h2 i{position:relative;top:3px;*top:-2px;display:inline-block;width:23px;height:24px;margin-right:8px;background:url(../images/icons.png) no-repeat ;}
+#category h2 i.t{background-position:0 -32px;}
+
+.category-list i{position:relative;top:3px;*top:-2px;display:inline-block;width:16px;height:16px;margin-right:8px;background:url(../images/icons.png) no-repeat -38px 0;}
+.category-list .i0{background-position:-38px 0;}
+.category-list .i1{background-position:-72px 0;}
+.category-list .i2{background-position:-106px 0;}
+.category-list .i3{background-position:-140px 0;}
+
+.category-list .t0{background-position:-38px -32px;}
+.category-list .t1{background-position:-72px -32px;}
+.category-list .t2{background-position:-106px -32px;}
+.category-list .t3{background-position:-140px -32px;}
+.category-list .t4{background-position:-172px -32px;}
+
+.category-list dt{padding:30px 14px 10px;background:url(../images/h3-line-bg.png) repeat-x 0 42px;}
+.category-list h3{display:inline-block;padding:0 10px;font-size:16px;background-color:#e5f4f4;*zoom:1;*display:inline;}
+.category-list dd{overflow:hidden;*zoom:1;}
+.category-list dd a{float:left;width:50%;height:44px;line-height:44px;text-indent:30px;font-size:14px;}
+.category-list dd a:hover{color:#15b7b1;background-color:#cff0f0;}
+.category-list dd a.cur{color:#fff;background-color:#ee5a31;}
+
+

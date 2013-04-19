@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <style type="text/css">
+        @import "/app/<%= appName %>/css/<%= templateName %>.css";
+    </style>
+    <title><%= templateName %>模块</title>
+</head>
+<body>
+    <section id="<%= templateName %>">
+    </section>
+    <script src="js/require-jquery.js"></script>
+    <script type="text/javascript" src="/app/<%= appName %>/js/<%= templateName %>.js"></script>
+    <script>
+        require.config({
+            baseUrl: "js"   
+        });        
+        define([], function (<%= templateName %>) {
+            <%= templateName %>.doInit();
+        });
+    </script>
+</body>
+</html>

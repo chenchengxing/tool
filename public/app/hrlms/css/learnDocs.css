@@ -1,0 +1,15 @@
+/**
+ * learnDocs.css
+ * 课程中心-课程详情 学习资料 
+ */
+
+
+
+#learnDocs .t-d{border-top:1px dashed #d5d5d5;}
+#learnDocs .t-d .down{display:none;}
+#learnDocs .hd{font-size:12px;color:#666;padding-top:10px;}
+#learnDocs .hd span{display:inline-block;line-height:30px;text-align:center;}
+#learnDocs .hd .name{padding-left:68px;}
+#learnDocs .hd .change-time{float:right;width:150px;}
+#learnDocs .hd .author{float:right;width:110px;}
+#learnDocs .hd .amount{float:right;width:60px;}

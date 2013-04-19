@@ -1,0 +1,19 @@
+<header class="hd">
+    <h2>名师推荐</h2>
+</header>
+<div class="bd">
+    <ul class="recomteacher-list">
+        {{each data}}
+        <li class="tc">
+            <div class="pic">
+                <a href="profileCourse.html?userId=${userId}" data-id="${userId}"><img src="${$item.defaultImage(\'family\',username)}" width="48" height="48" onerror="this.src=\'${$item.defaultImage(\'avatar\')}\';"/></a>
+            </div>
+            <div class="txt">
+                <!-- <a href="#" class="snsbtn bmin bmplus">关注</a> -->
+                <h5><span data-id="${userId}">${realName}</span></h5>
+                <p>${department}</p>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

@@ -1,0 +1,10 @@
+/**
+ * onlineCourse.css
+ * 课程中心-课程详情 在线课程 
+ */
+
+
+
+#onlineCourse .t-line{border-bottom:1px dashed #d5d5d5;}
+#onlineCourse .hover{background-color:#f6f6f6;}
+#onlineCourse .hover .btn{display:inline-block;}

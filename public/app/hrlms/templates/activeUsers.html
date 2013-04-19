@@ -1,0 +1,16 @@
+<header class="hd">
+    <h2>活跃用户</h2>
+</header>
+<div class="bd">
+    <ul>
+        {{each data}}
+        <li class="tc">
+            <div class="pic"><a tid="${id}" href="profileCourse.html?userId=${id}" data-id="${id}"><img width="48" height="48" src="${$item.defaultImage(\'family\', userName)}" onerror="this.src=\'${$item.defaultImage(\'avatar\')}\';"></a></div>
+            <div class="txt">
+                <h5><span data-id="${id}">${userName}</span></h5>
+                <p>发表了${noticeCount}条讨论</p>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

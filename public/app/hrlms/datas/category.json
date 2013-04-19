@@ -1,0 +1,77 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "id": 1,
+        "name": "分类导航",
+        "parentId": 0,
+        "rootId": 0,
+        "level": 1,
+        "typeId": 3,
+        "isParent": true,
+        "children": [
+            {
+                "id": 2,
+                "name": "技术研发",
+                "parentId": 1,
+                "rootId": 1,
+                "level": 2,
+                "typeId": 3,
+                "isParent": null,
+                "children": [
+                    {
+                        "id": 4,
+                        "name": "搜索技术",
+                        "parentId": 2,
+                        "rootId": 1,
+                        "level": 3,
+                        "typeId": 3,
+                        "isParent": false,
+                        "children": null
+                    },
+                    {
+                        "id": 5,
+                        "name": "操作系统",
+                        "parentId": 2,
+                        "rootId": 1,
+                        "level": 3,
+                        "typeId": 3,
+                        "isParent": false,
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "市场产品",
+                "parentId": 1,
+                "rootId": 1,
+                "level": 2,
+                "typeId": 3,
+                "isParent": true,
+                "children": [
+                    {
+                        "id": 6,
+                        "name": "用户研究",
+                        "parentId": 3,
+                        "rootId": 1,
+                        "level": 3,
+                        "typeId": 3,
+                        "isParent": false,
+                        "children": null
+                    },
+                    {
+                        "id": 7,
+                        "name": "需求分析",
+                        "parentId": 3,
+                        "rootId": 1,
+                        "level": 3,
+                        "typeId": 3,
+                        "isParent": false,
+                        "children": null
+                    }
+                ]
+            }
+        ]
+    },
+    "code": 200
+}

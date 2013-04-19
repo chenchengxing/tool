@@ -1,0 +1,20 @@
+<div class="arrow"></div>
+<div class="userpop-info">
+    <a href="#" id="closeUserPopup" class="close"></a>
+    <div class="userpop-pic"><a href="profileCourse.html?userId=${id}"><img src="http://family.baidu.com:8083/images/userimages/${userName}.jpg" width="48" height="48" /></a></div>
+    <div class="userpop-intro">
+        <h5>${userName}</h5>
+        <ul class="userpop-status">
+            <li><strong>${followed}</strong>关注</li>
+            <li><strong>${fans}</strong>粉丝</li>
+            <li><strong>${notices}</strong>发言</li>
+        </ul>
+    </div>
+    {{if followStatus == "FOLLOW"}}
+    <div class="userpop-opt-btns"><a href="#" class="snsbtn bmin">取消关注</a></div>
+    {{else followStatus == "MUTUAL"}}
+    <div class="userpop-opt-btns">已互相关注</div>
+    {{else}}
+    <div class="userpop-opt-btns"><a href="#" class="snsbtn bmin bmplus">关注</a></div>
+    {{/if}}
+</div>

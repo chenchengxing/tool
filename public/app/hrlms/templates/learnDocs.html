@@ -1,0 +1,18 @@
+<div> 
+</div>
+<div class="hd">
+    <span class="name">文件名</span>
+    <span class="change-time">修改时间</span>
+    <span class="author">上传者</span>
+    <span class="amount">大小</span>
+</div>
+{{each data}}
+<div class="t-d"> 
+    <span class="icon"><span class="${type}-icon"></span></span>
+    <span class="name"><a href="${resUrl}" target="_blank">${name}</a></span>
+    <span class="change-time">${crtTime}</span>
+    <span class="author">${crterName}</span>
+    <span class="amount">${$item.formatSize(size)}</span>
+    <span class="down"></span>
+</div>
+{{/each}}

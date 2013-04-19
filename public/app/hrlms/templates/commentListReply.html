@@ -1,0 +1,14 @@
+<div class="reply-box">
+    <form class="msg-reply-form" action="return false">
+        <input type="text" class="reply-form-text" id="" name="" value="请输入评论内容">
+        <input type="submit" class="reply-submit" value="回复">
+    </form>
+    <ul>
+        {{each result}}
+        <li>
+            <div class="reply-user">${$value.user.realName} <span class="comment-date">(1月24日)</span></div>
+            <div class="reply-text">${$value.content}</div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

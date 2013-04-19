@@ -1,0 +1,20 @@
+/**
+ * userCourse.css
+ * 首页 我的可选课表模块
+ */
+
+
+
+#userCourse{padding:10px 0;border-top:1px solid #22d8c8;border-bottom:1px solid #00b296;background:#19c5bf;}
+#userCourse h2{padding:0 14px 4px;color:#fff;font:18px "微软雅黑";}
+#userCourse .bd{width:220px;margin:0 auto;background:url(../images/user-course-bg.png) repeat-y;}
+#userCourse .ucc-top,
+#userCourse .ucc-btm{height:10px;background:url(../images/user-course-brd.png) no-repeat;}
+#userCourse .ucc-btm{background-position:0 bottom;}
+#userCourse .ucc-list{height:48px;padding:0 15px;overflow:hidden;}
+#userCourse .ucc-list li{line-height:24px;}
+/*#userCourse .ucc-list a{float:right;}*/
+#userCourse .ucc-list a{display:block;max-width:190px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+#userCourse .ucc-more{display:block;margin:0 15px;height:11px;text-align:center;}
+#userCourse .ucc-more span{display:inline-block;width:25px;height:10px;background:url(../images/icons.png) no-repeat -103px -315px;}
+#userCourse .ucc-more i{display:none;}

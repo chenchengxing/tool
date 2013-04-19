@@ -1,0 +1,44 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "pageNo": 1,
+        "pageSize": 5,
+        "orderBy": null,
+        "order": null,
+        "autoCount": true,
+        "result": [
+            {
+                "id": 986420,
+                "userName": "pertersnull",
+                "nickName": "pertersnull",
+                "userType": 1,
+                "email": "ceshi986420@baidu.com",
+                "biography": null,
+                "appId": 1,
+                "headImg": "http://family.baidu.com:8083/images/userimages/pertersnull.jpg",
+                "loginName": "pertersnull"
+            },
+            {
+                "id": 648701,
+                "userName": "lefty",
+                "nickName": "lefty",
+                "userType": 1,
+                "email": "ceshi648701@baidu.com",
+                "biography": null,
+                "appId": 1,
+                "headImg": "http://family.baidu.com:8083/images/userimages/lefty.jpg",
+                "loginName": "lefty"
+            }
+        ],
+        "totalCount": 2,
+        "first": 0,
+        "orderBySetted": false,
+        "totalPages": 1,
+        "hasNext": false,
+        "nextPage": 1,
+        "hasPre": false,
+        "prePage": 1,
+        "orderByString": ""
+    },
+    "code": 200
+}

@@ -1,0 +1,34 @@
+<ul>
+    {{each data}}
+    <li class="block {{if ($index+1)%4 == 3}}block-last{{/if}}">
+
+        <div class="block-header">
+
+        </div>
+
+        <div class="block-body">
+            <a href="groupInfo.html?groupId=${id}" class="block-left">
+                <img src="{{if image}}${image}{{else}}${$item.defaultImage(\'group\')}{{/if}}" width="48" height="48" onerror="this.src=\'${$item.defaultImage(\'group\')}\';">
+            </a>
+            <div class="block-right">
+                <h2 title="${name}">${name}</h2>
+                <span>${members} <em>个组员</em>  </span>
+            </div>
+            
+        </div>
+
+        <div class="block-footer">
+
+        </div>
+
+        <div class="hover-quit">
+            <div class="cross-quit"> <span>退出</span> </div>
+            
+            <a class="facade-image" href="groupInfo.html?groupId=${id}"></a>
+
+            <span class="facade-title" title="${name}"></span>
+        </div>
+
+    </li>
+    {{/each}}
+ </ul>

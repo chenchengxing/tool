@@ -1,0 +1,28 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,table,th,td{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit;}
+li{list-style:none;}
+caption,th{text-align:left;font-weight:normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+.section-content{margin: 0 auto;width: 1000px;}
+.section-footer{clear: both;}
+.section-row{}
+.ml-220px{margin-left: 220px;}
+.fl{float: left;}
+.fr{float: right;}
+.w-220px{width: 220px;}
+.w-560px{width: 560px;}
+.w-780px{width: 780px;}
+.w-30pct{width: 30%}
+.w-70pct{width: 70%}
+.clearfix:after{
+content: ".";
+display: block;
+visibility: hidden;
+height: 0;
+clear: both;
+}

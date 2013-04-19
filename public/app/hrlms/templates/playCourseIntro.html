@@ -1,0 +1,5 @@
+<div class="pic"><img src="{{if coverPath}}platform${coverPath}{{else}}images/cover-small.png{{/if}}" width="84" height="55" alt="${name}" /></div>
+                <div class="txt">
+                    <h2 title="${name}">${$item.substr(name)}</h2>
+                    <p>来自：{{if categoryNode.length > 0}}${categoryNode[0].name}{{/if}}</p>
+                </div>

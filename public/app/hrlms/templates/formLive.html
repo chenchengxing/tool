@@ -1,0 +1,78 @@
+<form action="" id="formLive" method="post">
+    <ul>
+        {{if liveType}}
+        <li class="g-row">
+                <label class="g-header" for="name"><i class="required">*</i>标题：</label>
+                <input type="text" id="name" name="name" maxlength="30" value="${name}" />
+        </li>
+        <li class="g-row">
+                <label class="g-header" for="description"><i class="required">*</i>简介：</label>
+                <textarea id="description" name="description">${$item.decode(description)}</textarea>
+        </li>
+        <li class="g-row">
+                <label class="g-header">封面：</label>
+                <img class="coverBig" src="{{if coverPath}}${coverPath}{{else}}images/cover-big.png{{/if}}" id="coverBig" width="220" height="140"/>
+                <input type="hidden" name="coverPath" id="picUrl" value="${coverPath}" />
+                <p class="changeIcon">给课程换个图标</p>
+                <p class="dim">从你的电脑选择你喜欢的图片，你可以选择上传JPG、GIF、PNG或BMP</p>
+                <p><input type="button" class="upload" id="uploadBtn" value="修改封面" /></p>
+        </li>
+        <li class="g-row">
+                <label class="g-header" for="beginTime"><i class="required">*</i>直播时间段：</label>
+                <input type="text" id="beginTime" name="beginTime" value="${beginTime}" class="date" /><span class="middle"> - </span><input type="text" value="${endTime}" name="endTime" id="endTime" class="date" /> 
+        </li>
+        <li class="g-row">
+            <label for="contactPersonMail" class="g-header"><i class="required">*</i>联系人邮箱：</label>
+            <input type="text" name="contactPersonMail" id="contactPersonMail" value="${contactPersonMail}" /> 
+        </li>
+        <li class="g-row">
+            <label class="g-header" for="address"><i class="required">*</i>直播地点：</label>
+            <input type="text" id="address" name="address" value="${address}" />
+        </li>
+        <li class="g-row">
+            <label for="maxUser" class="g-header"><i class="required">*</i>人数上限：</label>
+            <input type="text" name="maxUser" value="${maxUser}" id="maxUser" class="w80" />
+        </li>
+        <li class="g-row">
+            <input type="hidden" name="screenType" value="${screenType}" /><input type="hidden" name="liveType" value="${liveType}" /><input type="hidden" name="pass" value="${pass}" />
+            <a href="javascript:void(0);" class="confirm">修&nbsp;改</a>
+        </li>
+        {{else}}
+        <li class="g-row">
+                <label class="g-header" for="name"><i class="required">*</i>标题：</label>
+                <input type="text" id="name" name="name" maxlength="30" value="" />
+        </li>
+        <li class="g-row">
+                <label class="g-header" for="description"><i class="required">*</i>简介：</label>
+                <textarea id="description" name="description"></textarea>
+        </li>
+        <li class="g-row">
+                <label class="g-header">封面：</label>
+                <img class="coverBig" src="images/cover-big.png" id="coverBig" width="220" height="140"/>
+                <input type="hidden" name="coverPath" id="picUrl" value="" />
+                <p class="dim">从你的电脑选择你喜欢的图片，你可以选择上传JPG、GIF、PNG或BMP</p>
+                <p><input type="button" class="upload" id="uploadBtn" value="选择文件" /></p>
+        </li>
+        <li class="g-row">
+                <label class="g-header" for="beginTime"><i class="required">*</i>直播时间段：</label>
+                <input type="text" id="beginTime" name="beginTime" value="" class="date" /><span class="middle"> - </span><input type="text" value="" name="endTime" id="endTime" class="date" /> 
+        </li>
+        <li class="g-row">
+            <label for="contactPersonMail" class="g-header"><i class="required">*</i>联系人邮箱：</label>
+            <input type="text" name="contactPersonMail" id="contactPersonMail" /> 
+        </li>
+        <li class="g-row">
+            <label class="g-header" for="address"><i class="required">*</i>直播地点：</label>
+            <input type="text" id="address" name="address" value="" />
+        </li>
+        <li class="g-row">
+            <label for="maxUser" class="g-header"><i class="required">*</i>人数上限：</label>
+            <input type="text" name="maxUser" value="50" id="maxUser" class="w80" />
+        </li>
+        <li class="g-row">
+            <input type="hidden" name="screenType" value="1" /><input type="hidden" name="liveType" value="2" /><input type="hidden" name="pass" value="0" />
+            <a href="javascript:void(0);" class="confirm">确&nbsp;认</a>&nbsp;<a href="live.html" class="cancel">取&nbsp;消</a>
+        </li>
+        {{/if}}
+    </ul>
+</form>

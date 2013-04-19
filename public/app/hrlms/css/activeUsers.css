@@ -1,0 +1,13 @@
+/**
+ * activeUsers.css
+ * 小组-详情页、话题页、课程页 活跃用户模块
+ */
+
+
+
+#activeUsers{margin:0 0 30px;}
+#activeUsers .bd{padding:20px 10px 0;}
+#activeUsers .tc{margin:0 0 20px;overflow:hidden;*zoom:1;}
+#activeUsers .tc h5{color:#e74013;height:15px;}
+
+

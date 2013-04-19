@@ -1,0 +1,53 @@
+#CourseCreateStep .courseStep{margin-left:10px;}
+#CourseCreateStep h3{padding-left:55px;font:bold 24px/45px '宋体';color:#333;background:url(../images/createCourse.png) no-repeat 0 0 transparent;height:45px;}
+#CourseCreateStep .courseStep{background:url(../images/courseCreatestepbg.png) no-repeat 0 -140px transparent;}
+#CourseCreateStep .courseStep li{float:left;height:25px;padding-top:15px;font:16px/22px '微软雅黑';color:#fff;cursor:pointer;}
+#CourseCreateStep .courseStep li.step_1{padding-left:53px;width:180px;}
+#CourseCreateStep .courseStep li.step_2{padding-left:73px;width:170px;}
+#CourseCreateStep .courseStep li.step_3{padding-left:66px;width:169px;}
+#CourseCreateStep .courseStep_2{display:none;}
+#CourseCreateStep .courseStep_3{display:none;}
+#CourseCreateStep .courseStep_2 .nextBtn{border-top:1px solid #999999;padding-top:20px;}
+#CourseCreateStep .courseStep_2 .nextBtn a{border-radius:4px;margin-left:650px;padding:0 10px;}
+#CourseCreateStep .error {color:#c00;}
+#CourseCreateStep .courseStep_2 li p{margin-left: 100px !important;}
+.newCourse li{vertical-align:top;list-style:none;}
+.newCourse .g_header{display:inline-block;_display:inline;zoom:1;width:120px;font-size:14px;font-family:"microsoft yahei","微软雅黑";color:#666;text-align:right;vertical-align:top;}
+.newCourse #classifySelected{line-height:18px;display:inline-block;width:470px;color:#03907B;}
+.newCourse #classifySelected .classifyResult{background-color:#C8E9E4;display:inline-block;padding:0 10px;margin-right:3px;margin-bottom:2px;border-radius:3px;height:18px;line-height:20px;}
+.newCourse #classifySelected .classifyResult a{display:inline-block;color:#03907B;margin-left:10px;margin-right:-2px;font-size:11px;font-family:"微软雅黑";line-height:18px;color:#fff;}
+.newCourse #classifyEnter{height:20px;line-height:22px;margin-left: 30px;padding:0 10px;}
+.newCourse .g_header span{vertical-align:top;color:#ff5f37;top: 3px;vertical-align: top;}
+.newCourse .no{visibility:hidden;}
+.newCourse .g_row{margin-bottom:19px;}
+.newCourse .g_row input,.g_row textarea{border:#ececec 1px solid;padding:0 3px;height:25px;line-height:20px;color:#999;}
+.newCourse .g_row input{width:344px;}
+.newCourse .g_row input#courseWareFile{height:20px;width:200px;}
+.newCourse .g_row #showFileName{display:none;color:red;}
+.newCourse .g_row .tagInput{width:479px;}
+.newCourse .g_row .tag{display:inline-block;zoom:1;margin-right:5px;cursor:pointer;padding:0 8px;height:23px;line-height:23px;background-color:#c8e9e4;color:#008f79;}
+.newCourse .g_row select{display:inline-block;zoom:1;width:100px;height:18px;vertical-align:text-top;overflow:hidden;border:1px #ececec solid;}
+.newCourse .g_row textarea{display:inline-block;_display:inline;zoom:1;width:479px;height:299px;}
+.newCourse .g_row img{vertical-align:top;margin-right:10px;}
+.newCourse .g_row p{color:#666;margin:6px 0 6px 126px;}
+.newCourse .g_row .dim{color:#999;}
+.newCourse .g_row a{display:inline-block;_display:inline;margin-right:10px;vertical-align:top;}
+.newCourse .g_row a:hover{text-decoration:none;}
+.newCourse .g_row a.confirm{background-color:#e74013;padding:0 15px;height:30px;line-height:30px;color:#fff;font-size:16px;}
+.newCourse .g_row a.cancel{vertical-align:bottom;color:#19c5bf;text-decoration:underline;}
+.newCourse .g_row a.upload{background-color:#19c5bf;vertical-align:middle;font-size:12px;height:28px;line-height:28px;color:#fff;padding:0 18px;}
+.newCourse .emt{margin-top:35px;}
+.newCourse .g_row #cDesc{height:110px;width:300px;}
+.newCourse .g_row #cName{width:250px;}
+.courseStep_2 .newCourse .g_header{width:95px;font:14px '微软雅黑';}
+.courseStep_2 .addcourseWord{font:20px/30px '微软雅黑';padding-left:10px;border-bottom:1px solid #000;}
+.courseStep_2 .affirmAdd{margin-left:101px;padding:0 15px;line-height:27px;}
+.courseStep_2 .cancelAdd{margin-left:50px;padding:0 15px;line-height:27px;}
+.courseStep_2 .addCourseDetail li{margin:10px 40px 10px 10px;font-size:16px;background-color:#FDE9CC;}
+.courseStep_2 .addCourseDetail .courseDetailName{float:left;width:450px;overflow:hidden;padding-left:10px;font-size:12px;line-height:24px;}
+.courseStep_2 .addCourseDetail .act{float:right;width:40px;font-size:12px;line-height:24px;}
+.courseStep_2 .addCourseDetail .act a{color:blue;font-size:12px;line-height:24px;}
+.courseStep_2 .addCourseDetail .ctime{float:right;width:190px;font-size:12px;line-height:24px;}
+
+.courseStep_3 p{text-align:center;color:#999;}
+.courseStep_3 p .checkcourse{color:#999;}

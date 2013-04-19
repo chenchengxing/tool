@@ -1,0 +1,15 @@
+<header>
+    <h2>已完成的课程</h2>
+</header>
+<ul class="mb30">
+    {{each data.result}}
+    <li class="clearfix">
+        <span class="gradulation"></span>
+        <a hidefocus="true" class="fl img" href="courseInfo.html?courseId=${id}"><img width="172" height="110" src="{{if coverPath}}${coverPath}{{else}}${$item.defaultImage(\'course\')}{{/if}}" alt="${name}" onerror="this.src=\'${$item.defaultImage(\'course\')}\';"/></a>
+        <div class="detail">
+            <h2><a hidefocus="true" href="courseInfo.html?courseId=${id}">${name}</a></h2>
+            <p class="mt30">完成时间：<span class="time">${lastestStudyDateTime}</span></p>
+        </div>
+    </li>
+    {{/each}}
+</ul>

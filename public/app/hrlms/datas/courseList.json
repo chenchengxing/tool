@@ -1,0 +1,577 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "pageNo": 1,
+        "pageSize": 10,
+        "orderBy": null,
+        "order": null,
+        "autoCount": true,
+        "result": [
+            {
+                "id": 1,
+                "appId": 1,
+                "name": "【阅度】30年后，你拿什么养活自己？",
+                "description": "你现在是穷人吗？ 30年后按照现状你会变成什么样子？还能不能养活自己？子女教育基金与退休基金，你会优先配置哪个？有钱后怎样投资理财？",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/c6fa6acc-1622-47b3-8fcf-6ca4a7a89e7a/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "percentage" : 23,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 19,
+                "resourceCount": 34,
+                "elementCount": 4
+            },
+            {
+                "id": 2,
+                "appId": 1,
+                "name": "《Google 的架构发展过程 + 写好架构程序的基本原则》（上）",
+                "description": "做个简单测试",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/bd5be3f8-6dca-43ad-92e9-fbef553940d7/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "percentage" : 56,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 3999,
+                "resourceCount": 34,
+                "elementCount": 4
+            },
+            {
+                "id": 2,
+                "appId": 1,
+                "name": "《Google 的架构发展过程 + 写好架构程序的基本原则》（上）",
+                "description": "做个简单测试",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/bd5be3f8-6dca-43ad-92e9-fbef553940d7/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "percentage" : 80,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 3999,
+                "resourceCount": 34,
+                "elementCount": 4
+            },
+            {
+                "id": 2,
+                "appId": 1,
+                "name": "《Google 的架构发展过程 + 写好架构程序的基本原则》（上）",
+                "description": "做个简单测试",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/bd5be3f8-6dca-43ad-92e9-fbef553940d7/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 3999,
+                "resourceCount": 34,
+                "elementCount": 4
+            },
+            {
+                "id": 1,
+                "appId": 1,
+                "name": "【阅度】30年后，你拿什么养活自己？",
+                "description": "你现在是穷人吗？ 30年后按照现状你会变成什么样子？还能不能养活自己？子女教育基金与退休基金，你会优先配置哪个？有钱后怎样投资理财？",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/c6fa6acc-1622-47b3-8fcf-6ca4a7a89e7a/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 19,
+                "resourceCount": 34,
+                "elementCount": 4
+            },
+            {
+                "id": 2,
+                "appId": 1,
+                "name": "《Google 的架构发展过程 + 写好架构程序的基本原则》（上）",
+                "description": "做个简单测试",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/bd5be3f8-6dca-43ad-92e9-fbef553940d7/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 3999,
+                "resourceCount": 34,
+                "elementCount": 4
+            },
+            {
+                "id": 2,
+                "appId": 1,
+                "name": "《Google 的架构发展过程 + 写好架构程序的基本原则》（上）",
+                "description": "做个简单测试",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/bd5be3f8-6dca-43ad-92e9-fbef553940d7/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 3999,
+                "resourceCount": 34,
+                "elementCount": 4
+            },
+            {
+                "id": 2,
+                "appId": 1,
+                "name": "《Google 的架构发展过程 + 写好架构程序的基本原则》（上）",
+                "description": "做个简单测试",
+                "creatorId": 300,
+                "creatorName": "arthur",
+                "updateTime": null,
+                "createTime": "2013-02-28 16:50:12",
+                "coverPath": "/oc/downloads/bd5be3f8-6dca-43ad-92e9-fbef553940d7/attachment-5/screen_out.jpg",
+                "backgroundPic": "/example/1.jpg",
+                "status": 2,
+                "readStatus": true,
+                "elementList": null,
+                "elementIds": null,
+                "viewCount": 30000,
+                "source": 2,
+                "categoryIds": null,
+                "categoryNode": [
+                    {
+                        "id": 23,
+                        "name": "管理类",
+                        "parentId": null,
+                        "rootId": null,
+                        "level": null,
+                        "typeId": null,
+                        "isParent": null,
+                        "children": null
+                    }
+                ],
+                "tagNames": null,
+                "tags": [
+                    {
+                        "id": 1,
+                        "name": "Web架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    },
+                    {
+                        "id": 2,
+                        "name": "架构",
+                        "crtId": null,
+                        "status": 0,
+                        "appId": 0
+                    }
+                ],
+                "speakIds": null,
+                "speakers": [
+                    {
+                        "id": 0,
+                        "userId": 0,
+                        "realName": "小伟哥",
+                        "gender": 0,
+                        "email": null,
+                        "phone": null,
+                        "photo": null,
+                        "intro": null,
+                        "dept": null,
+                        "type": 0,
+                        "from": null,
+                        "status": 0
+                    }
+                ],
+                "lessonCount": 3,
+                "commentCount": 3999,
+                "resourceCount": 34,
+                "elementCount": 4
+            }
+        ],
+        "totalCount": 20,
+        "first": 0,
+        "orderBySetted": false,
+        "totalPages": 20,
+        "hasNext": true,
+        "nextPage": 2,
+        "hasPre": false,
+        "prePage": 1,
+        "orderByString": ""
+    },
+    "code": 200
+}

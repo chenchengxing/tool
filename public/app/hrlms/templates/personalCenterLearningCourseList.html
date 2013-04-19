@@ -1,0 +1,24 @@
+<li class="course-li">
+    <a href="courseInfo.html?courseId=${id}" class="course-pic">
+        <img src="{{if coverPath}}${coverPath}{{else}}${$item.defaultImage(\'course\')}{{/if}}" width="173" height="110" alt="" onerror="this.src=\'${$item.defaultImage(\'course\')}\';">
+    </a>
+    <div class="course-info">
+        <div class="course-head">
+            <h2 class="course-title"><a href="courseInfo.html?courseId=${id}">${name}</a></h2>
+        </div>
+        <div class="process-bar mt25">
+            <div class="per" style="width:{{if studyProgress}}${studyProgress}{{else}}0{{/if}}%;"></div>
+            <span class="val">{{if studyProgress}}${studyProgress}%{{else}}0%{{/if}}</span>
+        </div>
+        <div class="course-footer">
+            {{if elementList && elementList[0]}}
+                <a href="play.html?courseId=${id}&elementId=${elementList[0].id}" class="gbtn bbig bcl fr">继续学习</a>
+            {{/if}}
+            <span class="course-description">
+                {{if elementList && elementList[0] && elementList[0].name}}
+                    课时：${elementList[0].name}
+                {{/if}}
+            </span>
+        </div>
+    </div>
+</li>

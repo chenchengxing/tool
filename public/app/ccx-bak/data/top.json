@@ -1,0 +1,12 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "username": "xiexinwen01",
+        "email": null,
+        "originId": 88488848,
+        "userId": 31813,
+        "realName": "谢新文",
+        "userType": 3
+    },
+    "code": 200
+}

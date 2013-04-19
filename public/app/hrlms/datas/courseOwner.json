@@ -1,0 +1,15 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "id": 1,
+        "userName": "quanxiwei",
+        "nickName": "quanxiwei",
+        "userType": 1,
+        "biography": "这个人很懒，什么都没留下",
+        "fans": 10,
+        "followed": 10,
+        "notices": 10,
+        "headImg": "http://family.baidu.com:8083/images/userimages/quanxiwei.jpg"
+    },
+    "code": 200
+}

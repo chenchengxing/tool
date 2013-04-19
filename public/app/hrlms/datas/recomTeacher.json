@@ -1,0 +1,34 @@
+{
+    "message": "操作成功！",
+    "data": [
+        {
+            "userId":"3068449",
+            "realName":"徐化钧",
+            "username":"xuhuajun",
+            "email": "xuhuajun@baidu.com",
+            "department": "人力资源部"
+        },
+        {
+            "userId":"3054340",
+            "realName":"李江红",
+            "username":"lijianghong",
+            "email": "lijianghong@baidu.com",
+            "department": "人力资源部"
+        },
+        {
+            "userId":"3069197",
+            "realName":"徐欢生",
+            "username":"xuhuansheng",
+            "email": "xuhuansheng@baidu.com",
+            "department": "个人云部"
+        },
+        {
+            "userId":"3058379",
+            "realName":"孙云丰",
+            "username":"sunyunfeng",
+            "email": "sunyunfeng@baidu.com",
+            "department": "网页搜索产品市场部"
+        }
+    ],
+    "code": 200
+}

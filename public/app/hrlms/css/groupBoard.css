@@ -1,0 +1,37 @@
+/**
+ * groupBoard.css
+ * 小组-详情页 小组介绍&状态&组长
+ */
+
+
+
+#groupBoard{height:168px;background:url(../images/group-board-bg.png) no-repeat;}
+
+#groupBoard .group-intro{float:left;width:360px;margin:20px 0 0 20px;}
+#groupBoard .group-intro .pic{float:left;width:48px;margin-right:10px   ;}
+#groupBoard .group-intro .txt{overflow:hidden;*zoom:1;}
+#groupBoard .group-intro .txt h2{margin:0 0 8px;color:#333;font:16px/16px "微软雅黑";}
+#groupBoard .brief{margin:30px 10px 0 20px;line-height:20px;color:#999;overflow: hidden; position: absolute;width: 691px;z-index: 100;}
+#groupBoard .brief a{color:#e74013;}
+
+#groupBoard .group-tab{float:right;display:inline-block;height:30px;margin:13px 10px 0;background-color:#c1c1c1;*zoom:1;*display:inline;}
+#groupBoard .group-tab li{float:left;height:28px;padding:0 18px;border-top:2px solid #c1c1c1;font:14px/28px "微软雅黑";}
+#groupBoard .group-tab a{color:#fff;}
+#groupBoard .group-tab li.cur{border-top:2px solid #e74013;background-color:#999;}
+
+#groupBoard .group-creator{padding:16px 0 0 6px;overflow:hidden;*zoom:1;}
+#groupBoard .group-creator .pic{float:left;width:48px;margin-right:12px;}
+#groupBoard .group-creator .txt{overflow:hidden;*zoom:1;}
+#groupBoard .group-creator h5{color:#666;padding:0 0 8px;}
+#groupBoard .group-creator h5 em{color:#e74013;}
+
+#groupBoard .group-status{margin:16px 0 0;overflow:hidden;*zoom:1;}
+#groupBoard .group-status li{float:left;width:72px;padding:16px 0;text-align:center;}
+#groupBoard .group-status strong{display:block;padding:0 0 4px;color:#e74013;font:18px/18px Arial;}
+
+#groupBoard .group-course-count{cursor: pointer;}
+#groupBoard .group-member-count{cursor: pointer;}
+
+#groupBoard .group-quit{cursor: pointer;}
+#groupBoard .group-join{cursor: pointer;}
+

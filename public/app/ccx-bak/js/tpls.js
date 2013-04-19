@@ -1,0 +1,1 @@
+define({"test":"\n        <div>test</div>\n    ","pom":"\n        <div>ccx</div>\n    "});

@@ -1,0 +1,11 @@
+#csInfo{height:500px;margin-bottom:20px;}
+.tbContain{height:450px;overflow:auto;}
+#csInfo .handle{padding:20px 10px 10px 650px;}
+#csInfo .handle .rbtn{padding:0 15px;}
+.cs-info{width:100%;height:30px;line-heigth:30px;border-bottom:1px solid #999;}
+.cs-head{width:100%;height:30px;line-heigth:30px;background:#B0CBEC;color:#fff;}
+.cs-info span, .cs-head span{display:inline-block;text-align:center;line-height:30px;height:30px;overflow:hidden;}
+.cs-ck{width:30px;}
+.cs-title{width:320px;text-align:left;}
+.cs-name{width:150px;}
+.cs-time{width:200px;}

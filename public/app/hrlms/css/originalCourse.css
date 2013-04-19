@@ -1,0 +1,24 @@
+/**
+ * originalCourse.css
+ * 首页 学员原创课程
+ */
+
+
+
+#originalCourse .bd{overflow:hidden;*zoom:1;}
+.ori-arrow-left,
+.ori-arrow-right{position:relative;z-index:1000;float:left;width:40px;height:47px;margin-top:110px;cursor:pointer;background:url(../images/ori-arrow.png) no-repeat;}
+.ori-arrow-right{float:right;background-position:right 0;}
+
+.ori-c-wp{float:left;width:660px;margin:-150px 0 0 30px;overflow:hidden;}
+.ori-c-list{width:1980px;}
+.ori-c-list li{float:left;width:660px;}
+.ori-c-list a,
+.ori-c-list img{display:block;}
+.ori-c-list a{position:relative;}
+.ori-c-list a:hover{text-decoration:none;}
+.ori-c-list a:hover h5{background:#e74013;}
+.ori-c-list .sd{position:absolute;bottom:0;display:block;width:100%;height:24px;filter:alpha(opacity=30);opacity:0.3;background:#000;}
+.ori-c-list h5{position:absolute;bottom:0;width:100%;height:24px;line-height:24px;text-indent:6px;color:#fff;font-family:"微软雅黑";}
+.ori-c-list .c1{float:left;width:220px;height:140px;}
+.ori-c-list .c2{float:left;width:110px;height:140px;}

@@ -1,0 +1,11 @@
+/**
+ * miniSite.css
+ * 首页 培训小站
+ */
+
+
+
+.minisite-list{padding:0 0 40px;overflow:hidden;*zoom:1;}
+.minisite-list li{float:left;margin-right:38px;_margin-right:19px;}
+.minisite-list li.last{margin-right:0;}
+.minisite-list li a:hover{opacity:0.9;filter:alpha(opacity=90);}

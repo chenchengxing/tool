@@ -1,0 +1,57 @@
+<form id="baseCreate" action="" method="post" enctype="multipart/form-data">
+    <ul class="groupCreateDetail">
+        {{if groupId}}
+        <li class="g-row">
+            <span class="g-header inner-block">小组类型：</span>
+            <span class="g-box inner-block">
+                <input type="radio" id="groupTypePublic" name="groupType" checked="checked" /><label for="groupTypePublic">公开小组</label>
+                <p>任何成员可见，</p><p>默认设置任何成员都可以加入，</p><p>以后可以变为私密小组。</p>
+            </span>
+        </li>
+        <li class="g-row">
+            <label class="g-header inner-block" for="groupName"><i class="required">*</i> 小组名称：</label>
+            <input type="text" id="groupName" value="${name}" maxlength="50" name="name"/>
+        </li>
+        <li class="g-row">
+            <label class="g-header inner-block" for="groupDescription"><i class="required">*</i> 小组简介：</label>
+            <textarea id="groupDescription" name="desc">${desc}</textarea>
+        </li>
+        <li class="g-row">
+            <label class="g-header inner-block">小组图片：</label>
+            <img height="140" width="220" id="coverBig" src="{{if image}}${image}{{else}}images/cover-big.png{{/if}}" class="coverBig">
+            <input type="hidden" value="" id="picUrl" name="logo">
+            <p class="dim">从你的电脑选择你喜欢的图片，你可以选择上传JPG、GIF、PNG或BMP</p>
+            <p><input type="button" value="选择文件" id="uploadBtn" class="upload"></p>
+        </li>
+        <li class="g-row">
+            <a href="#" class="confirm">修&nbsp;改</a>&nbsp;<a href="#" class="cancel" onClick="history.back(-1);">返&nbsp;回</a>
+        </li>
+        {{else}}
+        <li class="g-row">
+            <span class="g-header inner-block">小组类型：</span>
+            <span class="g-box inner-block">
+                <input type="radio" id="groupTypePublic" name="groupType" checked="checked" /><label for="groupTypePublic">公开小组</label>
+                <p>任何成员可见，</p><p>默认设置任何成员都可以加入，</p><p>以后可以变为私密小组。</p>
+            </span>
+        </li>
+        <li class="g-row">
+            <label class="g-header inner-block" for="groupName"><i class="required">*</i> 小组名称：</label>
+            <input type="text" id="groupName" value="" maxlength="50" name="name"/>
+        </li>
+        <li class="g-row">
+            <label class="g-header inner-block" for="groupDescription"><i class="required">*</i> 小组简介：</label>
+            <textarea id="groupDescription" name="desc"></textarea>
+        </li>
+        <li class="g-row">
+            <label class="g-header inner-block">小组图片：</label>
+            <img height="140" width="220" id="coverBig" src="images/cover-big.png" class="coverBig">
+            <input type="hidden" value="" id="picUrl" name="logo">
+            <p class="dim">从你的电脑选择你喜欢的图片，你可以选择上传JPG、GIF、PNG或BMP</p>
+            <p><input type="button" value="选择文件" id="uploadBtn" class="upload"></p>
+        </li>
+        <li class="g-row">
+            <a href="javascript:void(0)" class="confirm">确&nbsp;认</a>&nbsp;<a href="group.html" class="cancel">取&nbsp;消</a>
+        </li>
+        {{/if}}
+    </ul>
+</form>

@@ -1,0 +1,13 @@
+<div class="pic">
+                    <ul>
+                        {{each result}}
+                        <li><a href="courseInfo.html?courseId=${courseId}"><img src="{{if course}}{{if course.backgroundPic}}platform${course.backgroundPic}{{/if}}{{/if}}" width="720" height="360" alt="" /></a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <span class="toleft"></span><span class="toright"></span>
+                <ul class="btns">
+                    {{each result}}
+                    <li{{if $index == 0}} class="cur"{{/if}}><span>●</span></li>
+                    {{/each}}
+                </ul>

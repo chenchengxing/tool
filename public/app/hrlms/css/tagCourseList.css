@@ -1,0 +1,14 @@
+/**
+ * tagCourseList.css
+ * 标签页-标签课程列表
+ */
+
+
+#tagCourseList .list-gird{padding:20px 0 0 6px;overflow:hidden;*zoom:1;}
+#tagCourseList .list-gird li{float:left;margin:0 24px 34px 0;_margin-right:12px;}
+#tagCourseList .list-gird li.nomr{margin-right:0;}
+
+#tagCourseList .list-l{padding:20px 0 0 10px;}
+#tagCourseList .list-l li{margin:0 0 35px;padding:0 0 35px;overflow:hidden;*zoom:1;border-bottom:1px dashed #999;}
+#tagCourseList .list-l li.last{margin-right:0;}
+

@@ -1,0 +1,11 @@
+/**
+ * relateCourse.css
+ * 课程中心-课程详情 推荐课程
+ */
+
+
+
+#relateCourse .refresh{float:right;margin-right:10px;color:#19c5bf;}
+#relateCourse .rc{margin:0 0 20px;}
+#relateCourse ul{padding:20px 0 0 10px;}
+#relateCourse .rc h5{   display: inline-block;max-width:120px;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}

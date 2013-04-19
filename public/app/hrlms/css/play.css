@@ -1,0 +1,29 @@
+/**
+ * play.css
+ * 播放器页面入口样式文件
+ */
+
+
+
+/* =播放器
+-------------------------------------------------------------- */
+/* 课程简介 */
+@import 'playCourseIntro.css';
+
+/* 目录&评论&笔记 */
+@import 'playTab.css';
+
+/* 标题 */
+@import 'playTitle.css';
+
+/* 播放器 */
+@import 'playBox.css';
+
+/* 输入框 */
+@import 'publisher.css';
+
+/* 小组讨论列表 */
+@import 'tweetList.css';
+
+/* 分页 */
+@import 'pagination.css';

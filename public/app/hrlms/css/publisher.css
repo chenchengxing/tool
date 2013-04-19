@@ -1,0 +1,25 @@
+/**
+ * publisher.css
+ * 小组 输入框模块
+ */
+
+
+
+#publisher{padding:0 14px 10px;}
+#publisher .publisher-bd{border:1px solid #e7e7e7;}
+#publisher .publisher-textarea{width:680px;height:78px;padding:5px;line-height:18px;border:0;resize:none;overflow:hidden;overflow-y:auto;word-break:break-all;word-wrap:break-word;outline:none;vertical-align:top;background:url(../images/textarea-bg.png) repeat-x;}
+
+#publisher .publisher-ft{padding:2px 0 0;text-align:right;}
+#publisher .publisher-insert{float:left;padding:2px 0 0 6px;}
+#publisher .publisher-insert a{color:#999;line-height:14px;}
+#publisher .publisher-insert i{position:relative;top:3px;display:inline-block;width:16px;height:14px;margin:0 4px 0 0;background:url(../images/icons.png) no-repeat;*zoom:1;*display:inline;}
+#publisher .publisher-insert .t-icon{background-position:-191px -240px;}
+#publisher .publisher-insert a:hover{color:#ea7e5a;font-weight:bold;text-decoration:none;}
+#publisher .publisher-insert a:hover .t-icon{background-position:-207px -240px;}
+
+#publisher .publisher-btn{display:inline;}
+#publisher .publisher-tip{padding:0 6px 0 0;color:#ababab;}
+#publisher .publisher-tip .er{color:#e74013;}
+#publisher .char-constantia{font-family:Georgia;font-size:24px;}
+#publisher .obtn{width:70px;height:24px;line-height:24px;text-align:center;padding:0;}
+#publisher .publisher-refresh{display:none;background:#fefded;color:#F48C12;border: 1px solid #f9f2a7;height:23px;line-height:23px;text-align:center;margin-top:10px;cursor:pointer;}

@@ -1,0 +1,55 @@
+<div class="intro">
+                    <a href="#" class="pic"><img src="{{if coverPath}}platform${coverPath}{{else}}images/cover-big.png{{/if}}" width="302" height="193" alt="" /></a>
+                    <div class="txt">
+                        <h1>${name}</h1>
+                        <p>所属分类：{{if categoryNode}} {{if categoryNode.length > 0}}${categoryNode[0].name}{{/if}} {{/if}}<br />讲师：{{each speakers}}${realName} {{/each}}</p>
+                        <div class="c-tag">
+                            {{each tags}}
+                            <a href="tag.html?tagId=${id}">${name}</a> 
+                            {{/each}}
+                        </div>
+                        {{if elementCount && elementCount != 0}}<a href="play.html?courseId=${id}" class="obtn">进入学习</a>{{/if}}
+                    </div>
+                </div>
+                <article class="brief">
+                    <h5>简介...</h5>
+                    <p>${$item.substr(description)}{{if $item.ifOverflow(description)}}<span class="view-more-description">更多&gt;&gt;</span>{{/if}}</p>
+                </article>
+                
+                <div class="detail-tab">
+                    <ul class="tab-btns">
+                        <li class="cur"><i class="i-o"></i>在线课程{{if elementCount}}(${elementCount}){{/if}}</li>
+                        <!-- <li><i class="i-f"></i>面授培训(${lessonCount})</li> -->
+                        <li><i class="i-l"></i>学习资料(${resourceCount})</li>
+                        <li><i class="i-c"></i>评论()</li>
+                    </ul>
+                    <div class="tab-cont">
+                        <!--#S onlineCourse -->
+                        <section id="onlineCourse">
+                            
+                        </section><!--#E onlineCourse -->
+                        
+                        <!--#S faceTrain --
+                        <section id="faceTrain">
+                            
+                        </section><!--#E faceTrain -->
+                        
+                        <!--#S learnDocs -->
+                        <section id="learnDocs">
+                            
+                        </section><!--#E learnDocs -->
+                    
+                        <!--#S comment -->
+                        <section id="publisher">
+                        </section><!--#E comment -->
+
+                        <!--#S commentList -->
+                        <section id="tweetList">
+
+                        </section><!--#E commentList -->
+                         <!--#S pagination -->
+                        <section id="pagination" class="mt10 pagination">
+                            <!-- <a href="#" class="page-prev">上一页</a> <a href="#">1</a> <span>2</span> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#" class="page-next">下一页</a> -->
+                        </section><!--#E pagination -->
+                    </div>
+                </div>

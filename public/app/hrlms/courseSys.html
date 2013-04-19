@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>百度统一培训 课程中心</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/course.css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--#S top -->
+    <section id="top" class="gray-bg">
+    </section><!--#E top -->
+    
+    <!--#S header -->
+    <header id="header">
+    </header><!--#E header -->
+    
+    <!--#S content -->
+    <section id="content" class="clearfix w mt10 c-blue-bg">
+        <!--#S aside -->
+        <aside class="fl w230">
+            <!--#S category -->
+            <section id="category">
+            </section><!--#E category -->
+        </aside><!--#E aside -->
+        
+        <section class="fr w720">
+            <!--#S filterCourse -->
+            <section id="filterCourse" class="filter-course">
+                <div class="switch-view">
+                    <a href="#" class="v-grid"><span>网格</span></a> <a href="#" class="v-list-cur"><span>列表</span></a>
+                </div>
+                <div class="filter-type">排序方式：<a href="?orderType=1" class="f-time-cur"><i></i>更新时间</a> <a href="?orderType=1" class="f-pv"><i></i>浏览量</a> <a href="?orderType=1" class="f-cmt"><i></i>评论量</a></div>
+            </section><!--#E filterCourse -->
+            
+            <!--#S courseList -->
+            <section id="courseList" class="mt10">
+                <ul class="list-l">
+                    <li class="cl">
+                        <div class="pic">
+                            <a href="#"><img src="images/220x140.png" width="220" height="140" alt=""></a>
+                            <a href="#" class="apply-icon"><span>去报名</span></a>
+                        </div>
+                        <div class="txt">
+                            <h5><a href="#">流行演唱技巧流行演唱技巧</a></h5>
+                            <p>搜索营销方案策划类课程侧重于解决客户首次建立账户 的搜索推广账户策划方法与技巧，帮助客户对搜索推广营销方案有更深入的理解和掌握。</p>
+                            <div class="tag">
+                                <a href="tag.html?id=1" class="t">社会科学</a> <a href="tag.html?id=1" class="t">社会科学</a> <a href="tag.html?id=1" class="t">社会科学</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cl">
+                        <div class="pic">
+                            <a href="#"><img src="images/220x140.png" width="220" height="140" alt=""></a>
+                        </div>
+                        <div class="txt">
+                            <h5><a href="#">流行演唱技巧流行演唱技巧</a></h5>
+                            <p>搜索营销方案策划类课程侧重于解决客户首次建立账户 的搜索推广账户策划方法与技巧，帮助客户对搜索推广营销方案有更深入的理解和掌握。</p>
+                            <div class="tag">
+                                <a href="tag.html?id=1" class="t">社会科学</a> <a href="tag.html?id=1" class="t">社会科学</a> <a href="tag.html?id=1" class="t">社会科学</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cl">
+                        <div class="pic">
+                            <a href="#"><img src="images/220x140.png" width="220" height="140" alt=""></a>
+                        </div>
+                        <div class="txt">
+                            <h5><a href="#">流行演唱技巧流行演唱技巧</a></h5>
+                            <p>搜索营销方案策划类课程侧重于解决客户首次建立账户 的搜索推广账户策划方法与技巧，帮助客户对搜索推广营销方案有更深入的理解和掌握。</p>
+                            <div class="tag">
+                                <a href="tag.html?id=1" class="t">社会科学</a> <a href="tag.html?id=1" class="t">社会科学</a> <a href="tag.html?id=1" class="t">社会科学</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section><!--#E courseList -->
+            
+            <!--#S pagination -->
+            <section id="pagination" class="mt10 pagination">
+                <a href="#" class="page-prev">上一页</a> <a href="#">1</a> <span>2</span> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#" class="page-next">下一页</a>
+            </section><!--#E pagination -->
+        </section>
+    </section><!--#E content -->
+    
+    <!--#S footer -->
+    <footer id="footer">
+    </footer><!--#E footer -->
+    
+    
+    <script src="js/require-jquery.js"></script>
+    <script>
+        require.config({
+            baseUrl: "js",
+            paths: {
+                "courseSys": "courseSys"
+            },
+            shim: {
+                "jquery.tmpl": ["jquery"]
+            }
+        });
+        require(["courseSys"]);
+    </script>
+</body>
+</html>

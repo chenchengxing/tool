@@ -1,0 +1,30 @@
+/**
+ * personalCenterCalendar.css
+ * personalCenterCalendar.html 我的选课日历(个人中心)入口样式文件
+ */
+
+
+
+/* =我的选课日历
+-------------------------------------------------------------- */
+
+
+
+/*个人中心左侧导航 */
+@import 'personalCenterNav.css';
+
+/* 分页 */
+@import 'pagination.css';
+
+#personalCenterCalendarTop h2{background:url(../images/header-dotted.png) repeat-x 0 bottom;width:200px;line-height:40px}
+#personalCenterCalendarTop header{height:40px;font-family:"微软雅黑";font-size:16px;color:#888}
+#personalCenterCalendarList li{padding-left:68px}
+#personalCenterCalendarList .live-list-con{background-position:32px 0}
+#personalCenterCalendarList .live-list-con li{background-position:18px 25px}
+#personalCenterCalendarList .live-list-b-bg{background-position:29px bottom}
+#personalCenterCalendarList h5{width:400px}
+#personalCenterCalendarList .personalCenterAuthor{font-size:14px;color:#999;float:right}
+#personalCenterCalendarList .bbig{padding-left:24px;padding-right:24px}
+#personalCenterCalendarList .cif-r{padding-right:30px}
+/*#personalCenterCalendarList .cif-r a{margin-top:0}*/
+#personalCenterCalendarList .selectable-status{padding-top: 23px;height: 100%;text-align: center;font-size: 18px;}

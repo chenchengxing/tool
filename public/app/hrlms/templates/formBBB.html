@@ -1,0 +1,61 @@
+<form id="formBBB" action="#" method="post">
+    <ul>
+        {{if liveType}}
+        <li class="g-row">
+                <label class="g-header" for="name"><i class="required">*</i>标题：</label>
+                <input type="text" id="bname" name="name" maxlength="30" value="${name}" />
+        </li>
+        <li class="g-row">
+                <label class="g-header" for="description"><i class="required">*</i>简介：</label>
+                <textarea id="bdescription" name="description">${$item.decode(description)}</textarea>
+        </li>
+        <li class="g-row">
+                <label class="g-header">封面：</label>
+                <img class="coverBig" src="{{if coverPath}}${coverPath}{{else}}images/cover-big.png{{/if}}" id="bcoverBig" width="220" height="140"/>
+                <input type="hidden" name="coverPath" id="bpicUrl" value="${coverPath}" />
+                <p class="changeIcon">给课程换个图标</p>
+                <p class="dim">从你的电脑选择你喜欢的图片，你可以选择上传JPG、GIF、PNG或BMP</p>
+                <p><input type="button" class="upload" id="buploadBtn" value="选择文件" /></p>
+        </li>
+        <li class="g-row">
+            <label class="g-header"><i class="required">*</i>教室开放时间：</label>
+            <input type="text" value="${beginTime}" id="bbeginTime" name="beginTime" class="date" /><span class="middle"> - </span><input type="text" value="${endTime}" id="bendTime" name="endTime" class="date" /> 
+        </li>
+        <li class="g-row">
+            <label for="maxUser" class="g-header"><i class="required">*</i>人数上限：</label>
+            <input type="text" name="maxUser" value="${maxUser}" id="maxUser" class="w80" />
+        </li>
+        <li class="g-row">
+            <a href="javascript:void(0);" class="confirm">修&nbsp;改</a>
+        </li>
+        {{else}}
+        <li class="g-row">
+                <label class="g-header" for="name"><i class="required">*</i>标题：</label>
+                <input type="text" id="bname" name="name" maxlength="30" value="" />
+        </li>
+        <li class="g-row">
+                <label class="g-header" for="description"><i class="required">*</i>简介：</label>
+                <textarea id="bdescription" name="description"></textarea>
+        </li>
+        <li class="g-row">
+                <label class="g-header">封面：</label>
+                <img class="coverBig" src="images/cover-big.png" id="bcoverBig" width="220" height="140"/>
+                <input type="hidden" name="coverPath" id="bpicUrl" value="" />
+                <p class="changeIcon">给课程换个图标</p>
+                <p class="dim">从你的电脑选择你喜欢的图片，你可以选择上传JPG、GIF、PNG或BMP</p>
+                <p><input type="button" class="upload" id="buploadBtn" value="选择文件" /></p>
+        </li>
+        <li class="g-row">
+            <label class="g-header"><i class="required">*</i>教室开放时间：</label>
+            <input type="text" value="" id="bbeginTime" name="beginTime" class="date" /><span class="middle"> - </span><input type="text" value="" id="bendTime" name="endTime" class="date" /> 
+        </li>
+        <li class="g-row">
+            <label for="maxUser" class="g-header"><i class="required">*</i>人数上限：</label>
+            <input type="text" name="maxUser" value="50" id="maxUser" class="w80" />
+        </li>
+        <li class="g-row">
+        <a href="#" class="confirm">确&nbsp;认</a>&nbsp;<input type="reset" class="cancel" value="取&nbsp;消" />
+        </li>
+        {{/if}}
+    </ul>
+</form>

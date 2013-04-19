@@ -1,0 +1,528 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HRLMS 公共模块</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+    <style type="text/css">
+        body{padding:0 20px;}
+        h1{position:relative;display:inline-block;height:20px;line-height:20px;margin:0 10px 6px;padding:2px 10px;font-weight:bold;color:#000;border-radius:3px;background:#008f79;}
+        h1:after{position:absolute;left:50%;display:block;width:0;height:0;margin-left:-10px;content:" ";border:10px;border-color:#008f79 transparent transparent transparent;border-style:solid dashed dashed dashed;}
+        .hr{clear:both;margin:20px 0;background:#ccc;text-align:center;}
+        
+        .train-system-mod .mod-bd{height:100px;}
+        .mod .mod-bd{height:100px;}
+        .aside-mod .mod-bd{height:100px;}
+        .head-mod .mod-bd{height:100px;border:1px solid red;}
+        .lec-list-item{border:1px solid red;}
+    </style>
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <h1>自适应宽度、高度、边距模块:</h1>
+    <!--#S mod-->
+    <section id="" class="mt10 mod">
+        <header class="hd">
+            <div class="pl"><a href="#" class="more"><span>更多</span></a></div>
+            <h2>标题</h2>
+        </header>
+        <div class="bd">
+            内容
+        </div>
+    </section><!--#E mod-->
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    <h1>首页右侧内部自适应宽度、高度、边距模块:</h1>
+    <!--#S md-->
+    <section id="" class="mt10 md">
+        <header class="hd">
+            <div class="pl"><a href="#" class="more"><span>更多</span></a></div>
+            <h2>标题</h2>
+        </header>
+        <div class="bd">
+            内容
+        </div>
+    </section><!--#E md-->
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>按钮们 模块:</h1>
+    <div class="p20">
+        绿色：
+        <a class="gbtn bbig bbplus bcl" href="#">创建课程</a>
+        <a class="gbtn bmin bmplus bcl" href="#">创建课程</a>
+        <a class="gbtn bbig bbplus" href="#">创建课程</a>
+        <a class="gbtn bmin bmplus" href="#">创建课程</a>
+        <a class="gbtn bbig bcl" href="#">创建课程</a>
+        <a class="gbtn bmin bcl" href="#">创建课程</a>
+        <a class="gbtn bbig" href="#">创建课程</a>
+        <a class="gbtn bmin" href="#">创建课程</a>
+        </br>
+        </br>
+        
+        橙色：
+        <a class="obtn bbig bbplus bcl" href="#">创建课程</a>
+        <a class="obtn bmin bmplus bcl" href="#">创建课程</a>
+        <a class="obtn bbig bbplus" href="#">创建课程</a>
+        <a class="obtn bmin bmplus" href="#">创建课程</a>
+        <a class="obtn bbig bcl" href="#">创建课程</a>
+        <a class="obtn bmin bcl" href="#">创建课程</a>
+        <a class="obtn bbig" href="#">创建课程</a>
+        <a class="obtn bmin" href="#">创建课程</a>
+        
+        </br>
+        </br>
+        
+        蓝色：
+        <a class="bbtn bbig bbplus bcl" href="#">创建课程</a>
+        <a class="bbtn bmin bmplus bcl" href="#">创建课程</a>
+        <a class="bbtn bbig bbplus" href="#">创建课程</a>
+        <a class="bbtn bmin bmplus" href="#">创建课程</a>
+        <a class="bbtn bbig bcl" href="#">创建课程</a>
+        <a class="bbtn bmin bcl" href="#">创建课程</a>
+        <a class="bbtn bbig" href="#">创建课程</a>
+        <a class="bbtn bmin" href="#">创建课程</a>
+        
+        </br>
+        </br>
+        
+        红色：
+        <a class="rbtn bbig bbplus bcl" href="#">创建课程</a>
+        <a class="rbtn bmin bmplus bcl" href="#">创建课程</a>
+        <a class="rbtn bbig bbplus" href="#">创建课程</a>
+        <a class="rbtn bmin bmplus" href="#">创建课程</a>
+        <a class="rbtn bbig bcl" href="#">创建课程</a>
+        <a class="rbtn bmin bcl" href="#">创建课程</a>
+        <a class="rbtn bbig" href="#">创建课程</a>
+        <a class="rbtn bmin" href="#">创建课程</a>
+        
+        </br>
+        </br>
+        
+        SNS：
+        <a class="snsbtn bbig bbplus bcl" href="#">关注</a>
+        <a class="snsbtn bbig" href="#">关注</a>
+        <a class="snsbtn bbig bbplus" href="#">关注</a>
+        <a class="snsbtn bbig bcl" href="#">关注</a>
+        
+        <a class="snsbtn bmin bmplus bcl" href="#">关注</a>
+        <a class="snsbtn bmin" href="#">关注</a>
+        <a class="snsbtn bmin bcl" href="#">关注</a>
+        <a class="snsbtn bmin bmplus" href="#">关注</a>
+        
+        </br>
+        </br>
+        <a href="#" class="enter-learn-btn">进入学习</a>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+
+    <h1>推荐课程 模块:</h1>
+    <div class="p20">
+        <ul class="clearfix">
+            <li class="c fl">
+                <div class="c-pic">
+                    <a href="courseInfo.html?courseId=1"><img src="http://kan.baidu.com//oc/downloads/c6fa6acc-1622-47b3-8fcf-6ca4a7a89e7a/attachment-5/screen_out.jpg" alt="" width="220" height="140"></a>
+                </div>
+                <div class="c-cate"><a href="course.html?nodeId=23"><span>管理类</span></a></div>
+                <h5 class="c-title"><a href="courseInfo.html?courseId=1" class="to-apply">去报名</a><a href="couseInfo.html?courseId=1" title="【阅度】30年后，你拿什么养活自己？">【阅度】30年后，你拿</a></h5>
+                <div class="c-stat"><span class="s-play" title="播放"><i></i>30000</span> <span title="课节数" class="s-lesson"><i></i>4</span> <span class="s-comment"><i></i>19</span></div>
+            </li>
+            <li class="c fr hover">
+                <div class="c-pic" style="height:120px">
+                    <a href="courseInfo.html?courseId=1"><img src="http://kan.baidu.com//oc/downloads/c6fa6acc-1622-47b3-8fcf-6ca4a7a89e7a/attachment-5/screen_out.jpg" alt="" width="220" height="140"></a>
+                </div>
+                <div class="c-cate"><a href="course.html?nodeId=23"><span>管理类</span></a></div>
+                <h5 class="c-title"><a href="courseInfo.html?courseId=1" class="to-apply">去报名</a><a href="couseInfo.html?courseId=1" title="【阅度】30年后，你拿什么养活自己？">【阅度】30年后，你拿</a></h5>
+                <div class="c-stat"><span class="s-play" title="播放"><i></i>30000</span> <span title="课节数" class="s-lesson"><i></i>4</span> <span class="s-comment"><i></i>19</span></div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>话题 模块:</h1>
+    <!--#S head-mod-->
+    <ul class="p20">
+        <li class="gt">
+            <div class="pic"><a href="#"><img src="images/48x48.png" width="48" height="48" alt="" /></a></div>
+            <div class="txt">
+                <h5><a href="#">#Java编程#</a></h5>
+                <p>来自:Java编程 小组  by:赵晋彬 </p>
+            </div>
+        </li>
+    </ul><!--#E head-mod-->
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>标签 模块:</h1>
+    <div class="p20">
+        <a href="#" class="t">摄影基础</a>
+        <a href="#" class="t">摄影基础</a>
+        <a href="#" class="t">摄影基础</a>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>名师推荐 模块:</h1>
+    <div class="p20">
+        <ul>
+            <li class="tc">
+                <div class="pic">
+                    <a href="#"><img src="images/48x48-p.png" width="48" height="48" alt="" /></a>
+                </div>
+                <div class="txt">
+                    <a href="#" class="snsbtn bmin bmplus">关注</a>
+                    <h5>大笨猪</h5>
+                    <p>百度前端高级研发工程师...</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>达人 模块:</h1>
+    <div class="p20">
+        <ul>
+            <li class="dr">
+                <div class="pic">
+                    <a href="#"><img src="images/48x48-p.png" width="48" height="48" alt="" /></a>
+                </div>
+                <div class="txt">
+                    <h5>大笨猪</h5>
+                    <p><a href="#" class="snsbtn bmin bmplus">关注</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>课程详情-学员 模块:</h1>
+    <div class="p20">
+        <ul>
+            <li class="s">
+                <a href="#" class="pic"><img src="images/48x48-p.png" width="48" height="48" alt=""></a>
+                <a href="#">大笨猪猪</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>创建直播课堂-课程信息 模块:</h1>
+    <div class="cif">
+        <div class="cif-l"> 
+            <div class="time"> 
+                <span class="t-b">19</span>
+                <span class="t-s">11月今天</span>
+                <p class="t-dt">15:30-16:30</p>
+            </div>
+        </div>
+        <div class="cif-r"> 
+            <a class="bbtn bbig bcl" href="#">进入教室</a>
+        </div>
+        <div class="cif-c"> 
+            <span class="c-i"> 
+                <h5><a href="#">第一节课第一节课第一节课第一节课第一节课第一节课</a></h5>
+                <p class="c-p">创建者：fhw</p>
+            </span>
+        </div>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>课程中心-面授培训-left 模块:</h1>
+    <div class="cff cff-left">
+        <div class="cff-l-l">
+            <div class="time">
+                <span class="t-b">19</span>
+                <span class="t-s">11月今天</span>
+                <p class="t-dt">15:30-16:30</p>
+            </div>
+        </div>
+        <div class="cff-r"> 
+            <a class="gbtn bbig bcl" href="#">报名</a>
+        </div>
+        <div class="cff-c"> 
+            <span class="c-i"> 
+                <h5><a href="#">第一节课第一节课第一节课第一节课第一节课第一节课</a></h5>
+                <p class="c-p">赵晋彬</p>
+            </span>
+        </div>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>课程中心-面授培训-right 模块:</h1>
+    <div class="cff cff-right">
+        <div class="cff-l-r">
+            <div class="time">
+                <span class="t-b">19</span>
+                <span class="t-s">11月今天</span>
+                <p class="t-dt">15:30-16:30</p>
+            </div>
+        </div>
+        <div class="cff-r"> 
+            <a class="gbtn bbig bcl" href="#">报名</a>
+        </div>
+        <div class="cff-c"> 
+            <span class="c-i"> 
+                <h5><a href="#">第一节课第一节课第一节课第一节课第一节课第一节课</a></h5>
+                <p class="c-p">赵晋彬</p>
+            </span>
+        </div>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+        
+    <h1>我的选课、开课申请列表 模块:</h1> 
+    <div class="ml"> 
+        <div class="status"><a href="#" class="bbtn bmin">进入教室</a></div>
+        <div class="txt">
+            <h5><a href="#">课程名称课程名称课程名称课程名称</a></h5>
+            <p>12-31 15:30</p>
+        </div>
+    </div>
+    </br>
+    <div class="ml"> 
+        <div class="status"><span class="yes">通过</span></div>
+        <div class="txt">
+            <h5><a href="#">课程名称课程名称课程名称课程名称</a></h5>
+            <p>2012-10-24 19:19:11</p>
+        </div>
+    </div>
+    </br>
+    <div class="ml"> 
+        <div class="status"><span class="no">拒绝</span></div>
+        <div class="txt">
+            <h5><a href="#">课程名称课程名称课程名称课程名称</a></h5>
+            <p>2012-10-24 19:19:11</p>
+        </div>
+    </div>
+    
+     <div class="hr">--------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>图标们 模块:</h1>
+    <div class="p20">
+        <span class="doc-icon"></span>
+        <span class="pdf-icon"></span>
+        <span class="zip-icon"></span>
+        <span class="mmnp-icon"></span>
+        <span class="pic-icon"></span>
+        <span class="open-icon"></span>
+        <span class="p100-icon"></span>
+        <span class="p50-icon"></span>
+        <span class="p25-icon"></span>
+        <span class="p0-icon"></span>
+        <span class="p75-icon"></span>
+    </div>
+    
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>课程中心 学习资料 模块:</h1>
+    <div class="t-d"> 
+        <span class="icon"><span class="doc-icon"></span></span>
+        <span class="name"><a href="#">学习资料.doc</a></span>
+        <span class="change-time">2012-12-12 12:12</span>
+        <span class="author">赵金兵</span>
+        <span class="amount">200K</span>
+        <span class="down"></span>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>课程中心 在线课程 模块:</h1>
+    <div class="t-line">
+        <span class="icon"><span class="doc-icon"></span></span>
+        <span class="name"><a href="#">第一课：就是你</a></span>
+        <span class="btn"><a href="#" class="begin-learn-btn">开始学习</a></span>
+        <span class="step"><span class="p100-icon"></span></span>
+        <span class="time">07:30</span>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>课程详情-推荐课程 模块:</h1>
+    <div class="p20">
+        <ul>
+            <li class="rc">
+                <a href="#" class="pic"><img src="images/74x50.jpg" width="74" height="50" alt=""></a>
+                <div class="txt">
+                    <h5><a href="#">Abby学摄影..</a></h5>
+                    <p><strong>34</strong>人已学习</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>学习社区-话题区 话题详情 模块:</h1>
+    <div class="p20">
+        <ul>
+            <li class="tp-info">
+                <div class="tp-img"><img src="images/tp.png" width="26" height="26"/></div>
+                <div class="tp-st"> 
+                    <div class="tp-sum">9</div>
+                    <p class="tp-time">22:09</p>
+                </div>
+                <div class="tp-main"> 
+                    <div class="tp-name">#javascript</div>
+                    <div class="tp-dt"> 
+                        <span class="ff-gray">by</span>
+                        <span class="ps">李绍恒</span>
+                        <span class="ff-gray p-30">2012-12-12 12:12</span>
+                        <span class="ff-gray">发起</span>
+                        <span class="ff-gray p-30">最后回复：</span><span class="ps">李绍恒</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>小组-小组首页 小组简介 模块:</h1>
+    <div class="p20">
+        <ul>
+            <li class="g">
+                <a class="pic"> 
+                    <img src="images/48x48.png" width="48" height="48"/>
+                </a>
+                <div class="txt"> 
+                    <h5><a href="#">BIT小组</a> (829个成员)</h5>
+                    <p>我们是程序员，这里不只是写游戏的程序员，任何喜爱编程、对技术抱有热情的朋友，都可在此交流、沟通。</p>
+                </div>
+            </li>
+            <li class="g mt10">
+                <a class="pic"> 
+                    <img src="images/48x48.png" width="48" height="48"/>
+                    <span class="hot"></span>
+                </a>
+                <div class="txt"> 
+                    <h5><a href="#">商品条形码</a> (18个成员)</h5>
+                    <p>我们是程序员，这里不只是写游戏的程序员，任何喜爱编程、对技术抱有热情的朋友，都可在此交流、沟通。</p>
+                </div>
+            </li>
+            <li class="g mt10">
+                <a class="pic"> 
+                    <img src="images/48x48.png" width="48" height="48"/>
+                    <span class="new"></span>
+                </a>
+                <div class="txt"> 
+                    <h5><a href="#">Android编码学习小组</a> (182个成员)</h5>
+                    <p>我们是程序员，这里不只是写游戏的程序员，任何喜爱编程、对技术抱有热情的朋友，都可在此交流、沟通。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>学习社区-成员管理（升踢黑）</h1>
+    <div class="p20">
+        <ul>
+            <li class="mps">
+                <img src="images/mps.png" width="48" height="48"/>
+                <h5>李绍恒</h5>
+                <div class="mact"> 
+                    <a class="mup" href="#">升</a>
+                    <a class="mout" href="#">踢</a>
+                    <a class="mdark" href="#">黑</a>
+                </div>
+            </li>
+            <li class="mps">
+                <img src="images/mps.png" width="48" height="48"/>
+                <h5>李绍恒</h5>
+                <div class="mact"> 
+                    <a class="mup" href="#">升</a>
+                    <a class="mout" href="#">踢</a>
+                    <a class="mdark" href="#">黑</a>
+                </div>
+            </li>
+            <li class="mps">
+                <img src="images/mps.png" width="48" height="48"/>
+                <h5>李绍恒</h5>
+                <div class="mact"> 
+                    <a class="mup" href="#">升</a>
+                    <a class="mout" href="#">踢</a>
+                    <a class="mdark" href="#">黑</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>学习社区-成员管理（降）：</h1>
+    <div class="p20">
+        <ul>
+            <li class="mps">
+                <img src="images/mps.png" width="48" height="48"/>
+                <h5>李绍恒</h5>
+                <div class="maction"> 
+                    <a class="mdown" href="#">降</a>
+                </div>
+            </li>
+            <li class="mps">
+                <img src="images/mps.png" width="48" height="48"/>
+                <h5>李绍恒</h5>
+                <div class="maction"> 
+                    <a class="mdown" href="#">降</a>
+                </div>
+            </li>
+            <li class="mps">
+                <img src="images/mps.png" width="48" height="48"/>
+                <h5>李绍恒</h5>
+                <div class="maction"> 
+                    <a class="mdown" href="#">降</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>用户浮层 模块:</h1>
+    <div class="p20">
+        <div class="user-popup">
+            <div class="arrow"></div>
+            <div class="user-pop-info">
+                <a href="#" id="closeUserPopup" class="close"></a>
+                <div class="pic"><a href="profile.html?userId=${id}"><img src="images/48x48-p.png" width="48" height="48" /></a></div>
+                <div class="intro">
+                    <h5>大笨猪</h5>
+                    <ul class="status">
+                        <li><strong>345</strong>关注</li>
+                        <li><strong>1345</strong>粉丝</li>
+                        <li><strong>45</strong>发言</li>
+                    </ul>
+                </div>
+                <div class="opt-btns"><a href="#" class="snsbtn bmin bmplus">关注</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="hr">---------------------------------------------------------------我是分界线---------------------------------------------------------------</div>
+    
+    <h1>名称 模块:</h1>
+    <div class="p20">
+        <div class="user-popup" id="userPopup" style="top: 1504px; left: 92.5px; display: block;"><div class="arrow"></div><div class="userpop-info">    <a class="close" id="closeUserPopup" href="#"></a>    <div class="userpop-pic"><a href="profileCourse.html?userId=11111133323"><img height="48" width="48" src="http://family.baidu.com:8083/images/userimages/yuanfengjiao.jpg"></a></div>    <div class="userpop-intro">        <h5>yuanfengjiao</h5>        <ul class="userpop-status">            <li><strong>4</strong>关注</li>            <li><strong>5</strong>粉丝</li>            <li><strong>25</strong>发言</li>        </ul>    </div>        <div class="userpop-opt-btns"><a class="snsbtn bmin bmplus" href="#">关注</a></div>    </div></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

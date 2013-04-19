@@ -1,0 +1,24 @@
+/**
+ * tag.css
+ * tag.html标签页入口样式文件
+ */
+
+
+
+/* =标签页
+-------------------------------------------------------------- */
+
+/* 相关标签 */
+@import 'tags.css';
+
+/* 标签课程列表 */
+@import 'tagCourseList.css';
+
+/* 分页 */
+@import 'pagination.css';
+
+/* 排序&浏览方式 */
+@import 'filterCourse.css';
+
+/* 标签标题 */
+@import 'tagTitle.css';

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %>Mocker</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css">
+    
+    <style type="text/css">
+    body{font-family: "Microsoft YaHei"}
+    iframe{width: 100%;
+border: none;}
+    .widge-btn-group{position: absolute;left: 0;top: 0;height: 30px;display: none;}
+    .imageAnchor{text-align: center;width: 80px;height: 50px;vertical-align: middle;display: block;border: 1px solid white;cursor: pointer;}
+    .imageAnchor:hover{border: 1px solid #bbb}
+    .imageAnchor img{margin-top: 9px;}
+</style>
+  </head>
+  <body>
+
+        <div class="row">
+            <form class="form" style="margin-left:300px;">
+                <a id="btnSave" class="btn">保存</a>
+                <!-- <a id="btnReset" class="btn btn-primary">重置页面</a> -->
+            </form>
+        </div>
+        
+        <iframe src="/app/<%= appName %>/<%= page %>" border="0" frameborder="0" height="100%" width="100%" name="iframe">
+
+        </iframe>
+        
+        
+        <div class="toolbar">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <a class="brand" href="#">Title</a>
+                <ul class="nav" id="navToolbar">
+                    <li class="active"><a href="#layoutTab" data-toggle="tab"><i class="icon-tasks"></i> 布局</a></li>
+                    <li><a href="#tab2" data-toggle="tab">容器</a></li>
+                    <li id="liTemplate"><a href="#tabTemplate" data-toggle="tab">模板</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="layoutTab">
+                    <a class="btn" id="threeColumnLayout">三栏布局</a>
+                    <a class="btn" id="commonLayout">通栏</a>
+                </div>
+
+                <div class="tab-pane" id="tab2">
+                    <!-- <a class="btn btn-primary" id="btnSplitCol">分成两列</a>
+                    <a class="btn btn-primary" id="btnSplitRow">分成两行</a> -->
+                    <a class="imageAnchor" id="split" data-toggle="modal" href="#setWidthModal"><img src="/img/container-split-eg.png" width="64" height="32"></a>
+                </div>
+
+                <div class="tab-pane" id="tabTemplate">
+                    <!-- <button type="button" class="btn btn-success">foot</button> -->
+                    <!-- <button type="button" class="btn btn-success">tmp1</button> -->
+                </div>
+          </div>
+        </div>
+        
+    <div class="widge-btn-group btn-group" id="widgeBtnGroup">
+        <button type="button" class="btn btn-primary">移除模块</button>
+        <button type="button" class="btn btn-inverse">后加模块</button>
+        <button type="button" class="btn btn-inverse" id="btnFillTemplate">填充模块</button>
+        <button type="button" class="btn btn-inverse" id="btnSplitCol">分成两列</button>
+        <button type="button" class="btn btn-inverse" id="btnSplitRow">分成两行</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="setWidthModal" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="setWidthModalLabel">容器拆分设定</h3>
+        </div>
+        <div class="modal-body">
+            <form>
+                <label>X
+                </label>
+                <input class="span3" id="inputLeft" value="50px"></input>
+                <label>1 - X
+                </label>
+                <input class="span3" id="inputRight" value="500px"></input>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-primary" id="btnSplit">确定</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $("#btnReset").click(function () {
+        $("iframe").attr("src", $("iframe").attr("src"));
+    })
+
+        //init things
+        var _init = {
+            initAll : function () {
+                this.initIframe();
+                this.initTemplateList();
+            },
+            initIframe : function () {
+                $(iframe.document).find("body").css("padding", "5px");
+                $("iframe").css("height", $(window).height() - 200 + 'px');
+                $(iframe.document).find("body").css("height", (parseInt($(window).height()) - 200) + 'px');
+            },
+            initTemplateList : function () {
+                $.get("/getTemplateList", {"appName": "<%= appName %>"}, function (respnonse) {
+                    $.each(respnonse, function (i, v) {
+                        $("<button />").attr("type", "button").html(v.name).addClass("btn").addClass("btn-success").appendTo($("#tabTemplate"));
+                    })
+                });
+            }
+        };
+        _init.initAll();
+       
+        //listening resize event
+        $(window).on("resize", function () {
+            //ajust iframe'height
+            _init.initIframe();
+        });
+
+
+        $(iframe.document).on("click", "section", function (e) {
+            currentEditBlock = $(this);
+            handlerClick(e);
+        });
+
+        $("#layoutTab").on("click", "a", function () {
+            if ($(this).text() == "通栏") {
+                $.get("/common-layout.html", function (data) {
+                    $(iframe.document).find("body").html(data + $(iframe.document).find("body").html());
+                    _init.initIframe();
+                    
+                });
+            } else {
+                $.get("/layoutTemplate.html", function (data) {
+                    $(iframe.document).find("body").html(data + $(iframe.document).find("body").html());
+                    _init.initIframe();
+                });
+            }
+        })
+
+        $("#setWidthModal").modal("hide");
+
+
+
+        $("#btnSplit").on("click", function () {
+            var leftSection = $("<section />").addClass("mock").addClass("fl")
+                .css("width", $("#inputLeft").val());
+            var rightSection = $("<section />").addClass("mock").addClass("fr")
+                .css("width", $("#inputRight").val());
+
+            //replace section block to div,childrening two section,like <section> ->  <div><section /><section/> </div>
+            var replacingDiv = $("<div />").attr("class", currentEditBlock.attr("class")).removeClass("mock").addClass("clearfix").append(leftSection).append(rightSection);
+            if (getInlineStyle(currentEditBlock.attr("style"), "width")) {
+                replacingDiv.css("width", currentEditBlock.css("width"));
+            }
+           
+            currentEditBlock.replaceWith(replacingDiv);
+        });
+
+        function getInlineStyle (styles, prop) {
+            var value;
+            styles && styles.split(";").forEach(function (e) {
+                var style = e.split(":");
+                if ($.trim(style[0]) === prop) {
+                    value = style[1];           
+                }                    
+            });   
+            return value;
+        }
+        $("#btnSave").click(function () {
+            // $(iframe.document).find("body").children().each(function () {
+            //     console.log($(this).prop("tagName"))
+            // })
+
+            // console.log($(iframe.document).find("body").children().filter(function (index) {
+            //     return $(this).prop("tagName").toLowerCase() == "div" || $(this).prop("tagName").toLowerCase()  == "section";
+            // }).wrapAll("<p />").parent().html());
+            var data = {"data" : $(iframe.document).find("body").children().filter(function (index) {
+                return $(this).prop("tagName").toLowerCase() == "div" || $(this).prop("tagName").toLowerCase()  == "section";
+            }).wrapAll("<p />").parent().html()};
+            data.appName = "<%= appName %>";
+            data.page = "<%= page %>";
+            $.post("/savePage", data, function () {
+                console.log("suc")
+            })
+        });
+
+        //
+        $("#tabTemplate").on("click", "button", function (e) {
+            var selectedTemplate = $(e.target).html();
+            loadCss("/app/<%= appName %>/css/" + selectedTemplate + ".css");
+            currentEditBlock.attr("id", selectedTemplate).removeClass("mock");
+            iframeWin.require([selectedTemplate], function (template) {
+                template.doInit();
+            });
+        })
+
+        function loadCss(url) {
+            var link = iframe.document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = url;
+            iframe.document.getElementsByTagName("head")[0].appendChild(link);
+        }
+
+        
+        var iframeWin;
+        var currentEditBlock;
+        $("iframe").on("load", function () {
+            iframeWin = this.contentWindow;
+            // $(iframeWin).on("click", function (e) {
+            //     if ($(e.target).is("section")) {
+
+            //     currentEditBlock = $(e.target);
+            //     handlerClick(e);
+            //     }
+            // })
+        });
+
+        function handlerClick(iframeEvent) {
+            $(".tab-pane").removeClass("active");
+            $("#tabTemplate").addClass("active");
+            $("#navToolbar > li").filter(".active").removeClass("active");
+            $("#liTemplate").addClass("active");
+            $(iframe.document).find("section").css("outline", "1px dotted #ccc");
+            currentEditBlock.css("outline", "4px solid orange");
+            
+            if (currentEditBlock.is("section") && !currentEditBlock.hasClass("mock")) {
+                $("#widgeBtnGroup").show().css("left", iframeEvent.clientX).css("top", iframeEvent.clientY);
+            } else {
+                $("#widgeBtnGroup").hide();
+            }
+        }
+        $("#widgeBtnGroup").on("click", "button", function () {
+            if ($(this).text() == "填充模块") {
+                $("#setWidthModal").modal("show");
+                $("#widgeBtnGroup").hide();
+            } else if ($(this).text() == "分成两列") {
+                $("<section />").addClass("mocker-col").appendTo(currentEditBlock);
+                $("<section />").addClass("mocker-col").appendTo(currentEditBlock);
+                $("#widgeBtnGroup").hide();
+            } else if ($(this).text() == "分成两行") {
+                $("<section />").addClass("mocker-row").appendTo(currentEditBlock);
+                $("<section />").addClass("mocker-row").appendTo(currentEditBlock);
+                $("#widgeBtnGroup").hide();
+            } else if ($(this).text() == "移除模块") {
+                currentEditBlock.text("").addClass("mock");
+                $("#widgeBtnGroup").hide();
+            }  else if ($(this).text() == "后加模块") {
+                var newSection = $("<section />").addClass("mock").css("outline", "4px solid orange");
+                currentEditBlock.css("outline", "1px dotted #ccc");
+                newSection.insertAfter(currentEditBlock);
+                currentEditBlock = newSection;
+                $("#widgeBtnGroup").hide();
+            } 
+        })
+
+        
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+/**
+ * live.css
+ * live.html直播课堂入口样式文件
+ */
+
+
+
+/* =直播课堂
+-------------------------------------------------------------- */
+
+/* 直播课程列表 */
+@import 'liveTimeLine.css';
+
+/*我的开课申请 */
+@import 'myApply.css';
+
+/*我今天的选课 */
+@import 'myCourse.css';
+
+/* 分页 */
+@import 'pagination.css';

@@ -1,0 +1,10 @@
+﻿/**
+ * playCourseIntro.css
+ * 播放器 课程介绍模块
+ */
+
+
+#playCourseIntro{position:relative;height:55px;padding:4px;border-bottom:1px solid #21a191;background:url(../images/deepblue-bg.png) repeat 0 0;}
+#playCourseIntro .pic{float:right;}
+#playCourseIntro .txt{color:#fff;padding:4px 10px 0;font-family:"微软雅黑";overflow:hidden;*zoom:1;}
+#playCourseIntro .txt h2{margin:0 0 10px;font-size:14px;}

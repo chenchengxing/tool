@@ -1,0 +1,70 @@
+{
+   "errorcode":0,
+    "errormsg":"",
+    "data": {
+        "pageNo": 1,
+        "pageSize": 10,
+        "orderBy": null,
+        "order": null,
+        "autoCount": true,
+        "totalCount": 20,
+        "first": 0,
+        "orderBySetted": false,
+        "totalPages": 20,
+        "hasNext": true,
+        "nextPage": 2,
+        "hasPre": false,
+        "prePage": 1,
+        "orderByString": "",
+        "result" : [{
+                "beginTime": "2012-01-01 14:40",
+                "endTime": "2012-12-12 16:40",
+                "name": "课程名称0",
+                "author": "fhw",
+                "showArrow" : false,
+                "completed" : true,
+                "pcAuthor" : "赵晋彬"
+            },
+            {
+                "beginTime": "2012-12-21 14:40",
+                "endTime": "2012-12-12 16:40",
+                "name": "课程名称0",
+                "author": "fhw",
+                "status": 0,
+                "showArrow" : false,
+                "completed" : true,
+                "pcAuthor" : "赵晋彬"
+            },
+            {
+                "beginTime": "2012-12-01 14:40",
+                "endTime": "2012-12-12 16:40",
+                "name": "课程名称0",
+                "author": "fhw",
+                "status": 0,
+                "showArrow" : false,
+                "completed" : false,
+                "pcAuthor" : "赵晋彬"
+            },
+            {
+                "beginTime": "2012-12-01 14:40",
+                "endTime": "2012-12-12 16:40",
+                "name": "课程名称0",
+                "author": "fhw",
+                "status": 0,
+                "showArrow" : false,
+                "completed" : true,
+                "pcAuthor" : "赵晋彬"
+            },
+            {
+                "beginTime": "2012-12-01 14:40",
+                "endTime": "2012-12-12 16:40",
+                "name": "课程名称0",
+                "author": "fhw",
+                "status": 0,
+                "showArrow" : false,
+                "completed" : true,
+                "pcAuthor" : "陈承星"
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "result": [
+            {
+                "liName": "关注的人",
+                "name" : "idols"
+            },
+            {
+                "liName": "我的粉丝",
+                "name" : "fans"
+            },
+            {
+                "liName": "相互关注",
+                "name" : "mutual"
+            }
+        ]
+    },
+    "code": 200
+}

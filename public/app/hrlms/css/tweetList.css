@@ -1,0 +1,15 @@
+/**
+ * tweetList.css
+ * 小组 小组讨论列表模块
+ */
+
+
+
+#tweetList{padding:0 10px;margin-bottom:30px;}
+#tweetList li{padding:20px 4px;border-bottom:1px solid #e6e6e6;}
+
+#tweetReply{margin-top:10px;padding-left:56px;padding-right:5px;display:none;}
+#tweetReply .publisher-reply{width:619px;height:54px;padding:5px;line-height:18px;border:0;resize:none;overflow:hidden;overflow-y:auto;word-break:break-all;word-wrap:break-word;outline:none;vertical-align:top;background:url(../images/textarea-bg.png) repeat-x;border: 1px solid #e7e7e7;}
+#tweetReply .tweet-forward{vertical-align:-2px;_vertical-align:-3px;;margin-right:5px;}
+#tweetReply .tweet-reply-ft{text-align:right;margin-top:10px;line-height:24px;}
+#tweetReply .obtn{width:50px;height:24px;line-height:24px;text-align:center;padding: 0;}

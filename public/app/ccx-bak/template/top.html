@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <title></title>
+<link href="../css/top.css" rel="stylesheet" type="text/css"></head>
+<body>
+    <section id="top">
+        <div class="clearfix w">            <div class="fl user-name">                <div class="avatar">                                   </div>                {{if realName}}${realName}{{else}}${username}{{/if}} 您好!            </div>            <ul class="fr user-bar">                <li><a href="personalCenter.html">个人中心</a></li>                <li><a href="personalCenterLearning.html">在学课程</a></li>                <li><a href="personalCenterCalendar.html">选课日历</a></li>                <li class="last"><a href="./">退出</a></li>            </ul>        </div>
+    </section>
+    <script type="text/javascript" src="../js/require-jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.tmpl.js"></script>
+    <script type="text/javascript">
+        $.get("../data/top.json",
+            function (response) {
+                $("#top").html($.tmpl($("#top").html(), response.data));
+            }
+        );
+    </script>
+</body>
+</html>

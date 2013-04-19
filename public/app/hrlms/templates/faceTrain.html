@@ -1,0 +1,27 @@
+<div class="cc-ft-b"> 
+    <ul> 
+        {{each data}}
+        <li class="{{if status == 0}}no-ing{{else}}yes-ing{{/if}} {{if $index%2 == 0}}fr{{else}}fl{{/if}}">
+            <div class="cff {{if $index%2 == 0}}cff-left{{else}}cff-right{{/if}}">
+                <div class="{{if $index%2 == 0}}cff-l-l{{else}}cff-l-r{{/if}}">
+                    <div class="time">
+                        <span class="t-b">${$item.substr(beginTime, 8, 2)}</span>
+                        <span class="t-s">${$item.substr(beginTime, 5, 2)}月${$item.istoday(beginTime, 8, 2)}
+                        </span>
+                        <p class="t-dt">${$item.substr(beginTime, 11, 15)}-${$item.substr(endTime, 11, 15)}</p>
+                    </div>
+                </div>
+                <div class="cff-r"> 
+                    <a class="gbtn bmin" href="#">报名</a>
+                </div>
+                <div class="cff-c"> 
+                    <span class="c-i"> 
+                        <h5><a href="#">${name}</a></h5>
+                        <p class="c-p">${author}</p>
+                    </span>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

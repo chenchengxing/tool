@@ -1,0 +1,20 @@
+{{if source != 0}}
+<h2>${organize.name}</h2>
+<h3>${organize.alias}</h3>
+<p>${organize.intro}</p>
+{{else}}
+<div class="course-user">
+    <div class="pic"><a href="profileCourse.html?userId=${id}"><img src="http://family.baidu.com:8083/images/userimages/${userName}.jpg" alt="${name}" width="102" height="102" /></a></div>
+    <div class="txt">
+        <h5>${userName}</h5>
+        <p>${nickName}</p>
+        <!-- <a href="#" class="gbtn bmin bmplus">关注</a> -->
+    </div>
+    <ul class="user-status">
+        <li><strong>${followed}</strong>关注</li>
+        <li><strong>${fans}</strong>粉丝</li>
+        <li><strong>${notices}</strong>发言</li>
+    </ul>
+    <p class="intro">{{if biography && biography != "null"}}${biography}{{/if}}</p>
+</div>
+{{/if}}

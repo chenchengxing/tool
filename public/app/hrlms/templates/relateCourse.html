@@ -1,0 +1,19 @@
+<header class="hd">
+                    <!-- <a href="#" class="refresh">换一批</a> -->
+                    <h2>推荐课程</h2>
+                </header>
+                <div class="bd">
+                    {{if result && result.length > 0}}
+                    <ul>
+                        {{each result}}
+                        <li class="rc">
+                            <a href="courseInfo.html?courseId=${id}" class="pic"><img src="{{if coverPath}}platform${coverPath}{{else}}${$item.defaultImage(\'courseBig\')}{{/if}}" onerror="this.src=\'${$item.defaultImage(\'courseBig\')}\';" width="74" height="50" alt=""></a>
+                            <div class="txt">
+                                <h5><a href="courseInfo.html?courseId=${id}">${name}</a></h5>
+                                <p><strong>${sawUsersCount}</strong>人已学习</p>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    {{/if}}
+                </div>

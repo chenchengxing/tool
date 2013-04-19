@@ -1,0 +1,62 @@
+{
+    "message": "操作成功！",
+    "data": [
+        {
+            "userId":"3144846",
+            "realName":"任君欣",
+            "username":"renjunxin",
+            "email": "renjunxin@baidu.com",
+            "department": "人力资源部"
+        },
+        {
+            "userId":"3070043",
+            "realName":"赵晋彬",
+            "username":"zhaojinbin",
+            "email": "zhaojinbin@baidu.com",
+            "department": "流程信息管理部"
+        },
+        {
+            "userId":"3058533",
+            "realName":"李绍恒 (BP&IT) ",
+            "username":"lishaoheng",
+            "email": "lishaoheng@baidu.com",
+            "department": "流程信息管理部"
+        },
+        {
+            "userId":"3070900",
+            "realName":"王晓飞 (jackwang)",
+            "username":"wangxiaofei",
+            "email": "wangxiaofei@baidu.com",
+            "department": "人力资源部"
+        },
+        {
+            "userId":"3065181",
+            "realName":"李少彤",
+            "username":"lishaotong",
+            "email": " lishaotong@baidu.com",
+            "department": "人力资源部"
+        },
+        {
+            "userId":"3065988",
+            "realName":"白洁",
+            "username":"baijie02",
+            "email": "baijie02@baidu.com",
+            "department": "平台测试部"
+        },
+        {
+            "userId":"3057615",
+            "realName":"谢新文",
+            "username":"xiexinwen01",
+            "email": "xiexinwen01@baidu.com",
+            "department": "流程信息管理部"
+        },
+        {
+            "userId":"3059955",
+            "realName":"袁凤姣",
+            "username":"yuanfengjiao",
+            "email": "yuanfengjiao@baidu.com ",
+            "department": "平台测试部"
+        }
+    ],
+    "code": 200
+}

@@ -1,0 +1,40 @@
+{
+    "message": "操作成功！",
+    "data": {
+        "pageNo": 1,
+        "pageSize": 10,
+        "orderBy": null,
+        "order": null,
+        "autoCount": true,
+        "result": [
+            {
+                "tag": "酒逢知己千杯少",
+                "latestModifier": 1,
+                "latestModifierName": "quanxiwei",
+                "creator": 2,
+                "creatorName": "jiangzhenghao",
+                "groupName": "",
+                "groupId": 0
+            },
+            {
+                "tag": "酒逢知己千杯少",
+                "latestModifier": 1,
+                "latestModifierName": "quanxiwei",
+                "creator": 2,
+                "creatorName": "jiangzhenghao",
+                "groupName": "",
+                "groupId": 0
+            }
+        ],
+        "totalCount": 100,
+        "first": 0,
+        "orderBySetted": false,
+        "totalPages": 10,
+        "hasNext": true,
+        "nextPage": 2,
+        "hasPre": false,
+        "prePage": 1,
+        "orderByString": ""
+    },
+    "code": 200
+}

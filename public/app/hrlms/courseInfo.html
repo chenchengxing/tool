@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>百度统一培训 课程详情</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/courseInfo.css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--#S top -->
+    <section id="top" class="gray-bg">
+    </section><!--#E top -->
+    
+    <!--#S header -->
+    <header id="header">
+    </header><!--#E header -->
+    
+    <!--#S content -->
+    <section id="content" class="clearfix w mt10">
+        <section class="fl w720">
+            <!--#S courseDetail -->
+            <div id="courseDetail">
+                <!-- <div class="intro">
+                    <a href="#" class="pic"><img src="images/302x193.jpg" width="302" height="193" alt="" /></a>
+                    <div class="txt">
+                        <h1>Abby学摄影</h1>
+                        <p>来自：百度学院<br />讲师：很多人 很多人...</p>
+                        <div class="c-tag">
+                            <a href="#">社会科学</a> <a href="#">社会科学</a> <a href="#">社会科学</a> <a href="#">社会科学</a>
+                        </div>
+                        <a href="#" class="obtn">进入学习</a>
+                    </div>
+                </div>
+                <article class="brief">
+                    <h5>简介...</h5>
+                    <p>JavaScript是一种广泛用于客户端网页开发的脚本语言，它可以用来给HTML网页添加动态功能，实现与用户的交互。它最初由网景公司设计，是一种动态、弱类型、基于原型的语言，现在是甲骨文公司的注册商标...</p>
+                </article>
+                
+                <div class="detail-tab">
+                    <ul class="tab-btns">
+                        <li class="cur"><i class="i-o"></i>在线课程</li>
+                        <li><i class="i-f"></i>面授培训</li>
+                        <li><i class="i-l"></i>学习资料</li>
+                        <li><i class="i-c"></i>评论</li>
+                    </ul>
+                    <div class="tab-cont">
+                        <!--#S onlineCourse --
+                        <section id="onlineCourse">
+                            
+                        </section><!--#E onlineCourse -->
+                        
+                        <!--#S faceTrain --
+                        <section id="faceTrain">
+                            
+                        </section><!--#E faceTrain -->
+                        
+                        <!--#S learnDocs --
+                        <section id="learnDocs">
+                            
+                        </section><!--#E learnDocs -->
+                    
+                        <!--#S comment --
+                        <section id="comment">
+                        </section><!--#E comment -->
+
+                        <!--#S commentList --
+                        <section id="commentList">
+                        </section><!--#E commentList --
+                    </div>
+                </div> -->
+            </div><!--#E courseDetail -->
+        </section>
+        
+        <!--#S aside -->
+        <aside class="fr w230">
+            <!--#S courseOwner -->
+            <section id="courseOwner">
+                <!-- <h2>百度学院</h2>
+                <h3>LD</h3>
+                <p>人力资源部学习与发展组（LD）是业务部门的伙伴，旨在为百度人提供成长所需的知识和技能，帮助各业务部门实现目标。当百度战车在快跑道上奔跑时、当百度成员数快速增长时...<br />LD可以助你一臂之力。LD组有一个全组的邮箱：ld@baidu.com</p>
+                
+                <div class="course-user">
+                    <div class="pic"><img src="http://family.baidu.com:8083/images/userimages/yuanfengjiao.jpg" alt="" width="102" height="102" /></div>
+                    <div class="txt">
+                        <h5>李绍恒</h5>
+                        <p>lishaheng</p>
+                        <a href="#" class="gbtn bmin bmplus">关注</a>
+                    </div>
+                    <ul class="user-status">
+                        <li><strong>345</strong>关注</li>
+                        <li><strong>345</strong>粉丝</li>
+                        <li><strong>345</strong>发言</li>
+                    </ul>
+                    <p class="intro">个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介个人简介。。。</p>
+                </div> -->
+            </section><!--#E courseOwner -->
+            
+            <!--#S recentStudent -->
+            <section id="recentStudent" class="mt10 md">
+                
+            </section><!--#E recentStudent -->
+            
+            <!--#S relateCourse -->
+            <section id="relateCourse" class="mt10 md">
+                
+            </section><!--#E relateCourse -->
+        </aside><!--#E aside -->
+    </section><!--#E content -->
+    
+    <!--#S footer -->
+    <footer id="footer">
+    </footer><!--#E footer -->
+    
+    
+    <script src="js/require-jquery.js"></script>
+    <script>
+        require.config({
+            baseUrl: "js",
+            paths: {
+                "courseInfo": "courseInfo"
+            },
+            shim: {
+                "jquery.tmpl": ["jquery"]
+            }
+        });
+        require(["courseInfo"]);
+    </script>
+</body>
+</html>
